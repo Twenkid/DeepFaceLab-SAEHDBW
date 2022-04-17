@@ -2,6 +2,16 @@
 
 Notes, experience, tools, deepfakes
 
+17.4.2022
+
+Reduce noise, training at home/PC in the bedroom:
+Намаляване на шума при обучение вкъщи на компютър в спалнята (през нощта):
+
+* Win 10, Power Options/Опции на захранването: Икономичен режим, до 40-50% на ЦПУ - спира да бучи циклично (Core i5 6500 3.3 GHz).
+
+DFL Colab - от оригиналния iperov ... e... drive - edge --> 
+
+
 9.4.2022
 
 * https://mrdeepfakes.com/forums/thread-guide-deepfacelab-2-0-guide#
