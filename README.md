@@ -2,6 +2,28 @@
 
 Notes, experience, tools, deepfakes
 
+19.4.2022
+
+```
+preview_period = 334
+preview_period_colab = 200
+
+C:\DFL\DeepFaceLab_DirectX12\_internal\DeepFaceLab\models\Model_SAEHD\Model.py
+  #override
+    def should_save_preview_history(self):
+       return (not io.is_colab() and self.iter % preview_period == 0) or (io.is_colab() and self.iter % preview_period_colab == 0)
+    #    return (not io.is_colab() and self.iter % ( 10*(max(1,self.resolution // 64)) ) == 0) or \
+    #           (io.is_colab() and self.iter % 100 == 0)
+
+Also in ModelBase.py
+
+Similar function, ... but it's overriden in the separate models.
+```
+
+
+VS: copy with line numbers 
+
+
 17.4.2022
 
 Reduce noise, training at home/PC in the bedroom:
