@@ -2,19 +2,32 @@
 
 ## Notes, experience, tools, deepfakes
 
-~ 22.4.2022 -- interface changes (keys for preview update, changes of preview period etc.), review of portions of the code
+~ 22.4.2022 -- Minor iterface changes (more keys for save, preview update etc.; changes of preview period and auto saving; later: forcing generation of new previews instead of keeping the same etc.); reviewing the code
 
 ~ 25.4.2022? --> Started working on SAEHDBW - Grayscale deepfake model; research, experiments, modifications of the channel dimensions, studying the NN model.
 
 Goal: several times? higher performance, smaller models, higher resolution and/or more detailed models, although grayscale.
 
-
-
 ~ 27.4.2022 --> SAEHDBW - SUCCESS!
 
 First correctly training version (last error fixed masks getting bug after untested change, numpy).
 Initial mode: training from color input which is converted to grayscale during reading.
-Now the model can train 192x192 image on a 2 GB Geforce 750 Ti. (Check also for 224x... and various AE dims, encoder dims, decoder dims.)
+Now the model can train on 224x224 and 192x192 images on a 2 GB Geforce 750 Ti. (The quality etc. is to be checked at various AE dims, encoder dims, decoder dims.)
+
+liae-ud-r192-ae-96-48-48-12-bw_SAEHDBW  x f
+R224-AE64-48-48-12-BW_SAEHDBW x f 
+
+Training on converted to grayscale pretrain faceset, resized to 384x384 (from 768x768). Checking how much details would be captured with different dimensions.
+
+* SAEHDBW liae-ud-r96-32-32-16
+
+Iterations: about 220-230 ms for batch size 8 and about 320-330 for 12 after 370K, training from color images. This model is still progressing. The faceset is currently about 400 images for Biden and 2200 images for the other person, where the Biden's are of a higher quality and sharper. Initially training only on about 200 stills of Biden, then about 200 frames from a clip of a lower quality. The model has small dimensions so very high quality can't be captured anyway.
+
+![image](https://user-images.githubusercontent.com/23367640/166139358-17555ce6-06b0-4089-98be-41a2d596e34f.png)
+
+
+...
+
 
 Continuing working on the project.
 
