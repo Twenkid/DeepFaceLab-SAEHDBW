@@ -1,6 +1,26 @@
 # DeepFaceLab
 
-Notes, experience, tools, deepfakes
+## Notes, experience, tools, deepfakes
+
+~ 22.4.2022 -- interface changes (keys for preview update, changes of preview period etc.), review of portions of the code
+
+~ 25.4.2022? --> Started working on SAEHDBW - Grayscale deepfake model; research, experiments, modifications of the channel dimensions, studying the NN model.
+
+Goal: several times? higher performance, smaller models, higher resolution and/or more detailed models, although grayscale.
+
+
+
+~ 27.4.2022 --> SAEHDBW - SUCCESS!
+
+First correctly training version (last error fixed masks getting bug after untested change, numpy).
+Initial mode: training from color input which is converted to grayscale during reading.
+Now the model can train 192x192 image on a 2 GB Geforce 750 Ti. (Check also for 224x... and various AE dims, encoder dims, decoder dims.)
+
+Continuing working on the project.
+
+Training with grayscale input (8-bit jpg, png) significant improvement (twice) for the pre-training dataset color images.
+Modify Extract to extract to grayscale.
+Unpacking the pretrain faceset, 768x768 color. Extract to 384x384 BW.
 
 19.4.2022
 
