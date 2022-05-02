@@ -14,8 +14,8 @@ First correctly training version (last error fixed masks getting bug after untes
 Initial mode: training from color input which is converted to grayscale during reading.
 Now the model can train on 224x224 and 192x192 images on a 2 GB Geforce 750 Ti. (The quality etc. is to be checked at various AE dims, encoder dims, decoder dims.)
 
-liae-ud-r192-ae-96-48-48-12-bw_SAEHDBW  x f
-R224-AE64-48-48-12-BW_SAEHDBW x f 
+liae-ud-r192-ae-96-48-48-12-bw_SAEHDBW  x f, ~900ms (R192...-ae-64-48-48 - almost the same it time ~ 860 ms)
+R224-AE64-48-48-12-BW_SAEHDBW x f ~ 1500-1600ms
 
 Training on converted to grayscale pretrain faceset, resized to 384x384 (from 768x768). Checking how much details would be captured with different dimensions.
 
