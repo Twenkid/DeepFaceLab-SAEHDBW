@@ -1,4 +1,4 @@
-# DeepFaceLab
+# DeepFaceLab - New Grayscale SAEHDBW Model and Code Review / Documentation of the source files
 
 ## Notes, experience, tools, deepfakes
 
