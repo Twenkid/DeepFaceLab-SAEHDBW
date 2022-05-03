@@ -15,9 +15,41 @@ Initial mode: training from color input which is converted to grayscale during r
 Now the model can train on 224x224 and 192x192 images on a 2 GB Geforce 750 Ti. (The quality etc. is to be checked at various AE dims, encoder dims, decoder dims.)
 
 liae-ud-r192-ae-96-48-48-12-bw_SAEHDBW  x f, ~900ms (R192...-ae-64-48-48 - almost the same it time ~ 860 ms)
-R224-AE64-48-48-12-BW_SAEHDBW x f ~ 1500-1600ms
+
+R224-AE64-48-48-12-BW_SAEHDBW x f liae-ud ~ 1500-1600ms
 
 Training on converted to grayscale pretrain faceset, resized to 384x384 (from 768x768). Checking how much details would be captured with different dimensions.
+
+2.5.2022:
+
+DF-UDT-256-96-32-32-16_SAEHDBW --> batch 4: ~ 1200 ms, (~ 1150 ms slightly more overclock); batch 5 ~ 1500 ms (OOM errors occasionaly)
+
+Some model sizes on disk:
+
+```
+Model Sizes: MB
+
+LIAE-UD
+
+liae-ud-r192-ae-96-48-48-12-bw_SAEHDBW_summary.txt -- 361 MB  (12 is == 16)
+R192-AE64-48-48-16-LIAE-UD-SAEHDBW-PRETR_SAEHDBW_summary.txt  -- 269 M
+R192-AE80-48-48-16-LIAE-UD-SAEHD-BW-PRETR_SAEHDBW_summary.tx -- 315 M
+liae-ud-r96-64-64-22_SAEHDBW_summary.txt -- 313 M
+R224-AE64-48-48-12-BW_SAEHDBW_summary.txt -- 297   (12 is == 16)
+
+liae-ud-r96-24-24-12_SAEHDBW_summary.txt - 45.6
+liae-ud-r96-32-32-12-bw_SAEHDBW_summary.txt -- 96
+
+DF-UD
+
+dfud-r96-32-32-12-bw_SAEHDBW_summary.txt -- 104
+DF-UDT-256-96-32-32-16_SAEHDBW -- 281 M
+
+```
+
+Trying 't', searching for higher sharpness; various settings tried.
+
+-- Only 1.45 GB available. Connecting the monitor to the integrated GPU, but OS still reserves that amount and even with 77% usage after trying to create a bigger batch the model doesn't start training. (Windows 10 issue.)
 
 * SAEHDBW liae-ud-r96-32-32-16
 
