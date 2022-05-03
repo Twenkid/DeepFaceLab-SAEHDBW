@@ -31,18 +31,19 @@ Model Sizes: MB
 
 LIAE-UD
 
-liae-ud-r192-ae-96-48-48-12-bw_SAEHDBW_summary.txt -- 361 MB  (12 is == 16)
-R192-AE64-48-48-16-LIAE-UD-SAEHDBW-PRETR_SAEHDBW_summary.txt  -- 269 M
-R192-AE80-48-48-16-LIAE-UD-SAEHD-BW-PRETR_SAEHDBW_summary.tx -- 315 M
-liae-ud-r96-64-64-22_SAEHDBW_summary.txt -- 313 M
-R224-AE64-48-48-12-BW_SAEHDBW_summary.txt -- 297   (12 is == 16)
+liae-ud-r192-ae-96-48-48-12-bw_SAEHDBW -- 362 MB  (12 is == 16 mask dim)
+R192-AE80-48-48-16-LIAE-UD-SAEHD-BW-PRETR_SAEHDBW-- 315 M
+R192-AE64-48-48-16-LIAE-UD-SAEHDBW-PRETR_SAEHDBW  -- 269 M
 
-liae-ud-r96-24-24-12_SAEHDBW_summary.txt - 45.6
-liae-ud-r96-32-32-12-bw_SAEHDBW_summary.txt -- 96
+liae-ud-r96-64-64-22_SAEHDBW -- 313 M
+R224-AE64-48-48-12-BW_SAEHDBW -- 297 M  (12 is == 16)
+
+liae-ud-r96-24-24-12_SAEHDBW -- 45.6 M
+liae-ud-r96-32-32-12-bw_SAEHDBW -- 96 M
 
 DF-UD
 
-dfud-r96-32-32-12-bw_SAEHDBW_summary.txt -- 104
+dfud-r96-32-32-12-bw_SAEHDBW_summary.txt -- 104 M
 DF-UDT-256-96-32-32-16_SAEHDBW -- 281 M
 
 ```
