@@ -24,7 +24,7 @@ Training on converted to grayscale pretrain faceset, resized to 384x384 (from 76
 
 DF-UDT-256-96-32-32-16_SAEHDBW --> batch 4: ~ 1200 ms, (~ 1150 ms slightly more overclock); batch 5 ~ 1500 ms (OOM errors occasionaly)
 
-Some model sizes on disk:
+Some model sizes on disk and batch size (for 750 Ti/2 GB)
 
 ```
 Model Sizes: MB
@@ -41,10 +41,12 @@ R224-AE64-48-48-12-BW_SAEHDBW -- 297 M  (12 is == 16)
 liae-ud-r96-24-24-12_SAEHDBW -- 45.6 M
 liae-ud-r96-32-32-12-bw_SAEHDBW -- 96 M
 
+LIAE-UDT-R128-96-32-32-16_SAEHDBW -- 209 M  B: 4,6,8 (B=8: it= 444-463 ms (530, Lower power mode) --> ~4K@4, 13K@6 --> 8), 4.5.2022 -->
+
 DF-UD
 
 dfud-r96-32-32-12-bw_SAEHDBW_summary.txt -- 104 M
-DF-UDT-256-96-32-32-16_SAEHDBW -- 281 M
+DF-UDT-256-96-32-32-16_SAEHDBW -- 281 M B: 4, 5 (OOM in minutes sometimes)
 
 ```
 
