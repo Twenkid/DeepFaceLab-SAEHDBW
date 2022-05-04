@@ -32,6 +32,7 @@ Model Sizes: MB
 LIAE-UD
 
 liae-ud-r192-ae-96-48-48-12-bw_SAEHDBW -- 362 MB  (12 is == 16 mask dim)
+
 R192-AE80-48-48-16-LIAE-UD-SAEHD-BW-PRETR_SAEHDBW-- 315 M
 R192-AE64-48-48-16-LIAE-UD-SAEHDBW-PRETR_SAEHDBW  -- 269 M
 
@@ -43,11 +44,20 @@ liae-ud-r96-32-32-12-bw_SAEHDBW -- 96 M
 
 LIAE-UDT-R128-96-32-32-16_SAEHDBW -- 209 M  B: 4,6,8 (B=8: it= 444-463 ms (530, Lower power mode) --> ~4K@4, 13K@6 --> 8), 4.5.2022 --> train at f (also do on mf)
 
+LIAE-UDT-192-128-32-32-16-SAEHDBW_SAEHDBW_summary -- 270 MB
+LIAE_UDT-192-96-32-48-16-SAEHDBW_SAEHDBW_summary -- 346 MB ==> would it be beneficial if having a lower dim. encoder than decoder (yet more parameters overall and thus more detail?)
+
+LIAE-UDT 192-96-32-48-16 vs LIAE-UD 192-96-48-48-16 ?
+
+
 DF-UD
 
 dfud-r96-32-32-12-bw_SAEHDBW_summary.txt -- 104 M
 DF-UDT-256-96-32-32-16_SAEHDBW -- 281 M B: 4, 5 (OOM in minutes sometimes)
 DF-UDT-R96-64-24-24-16-SAEHDBW_SAEHDBW -- 50 MB , train @mf 
+
+
+
 
 
 ```
