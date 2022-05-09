@@ -6,9 +6,12 @@
 
 ~ 25.4.2022? --> Started working on SAEHDBW - Grayscale deepfake model; research, experiments, modifications of the channel dimensions, studying the NN model.
 
-Goal: several times? higher performance, smaller models, higher resolution and/or more detailed models, although grayscale.
+## Goals of the project:
+* Allow training of more "respectable" resolution models even on 2 GB GPUs, GeForce 750 Ti in particular, and on integrated GPUs
+* Achieve several times? higher performance: either smaller models, higher resolution and/or more detailed models, although grayscale. 
+* Study the code, if possible modify the architectures and optimize more: simplify/reduce the depth of some networks to check if they would achieve similar quality due to the single channel with improved performance. 
 
-~ 27.4.2022 --> SAEHDBW - SUCCESS!
+* ~ 27.4.2022 --> SAEHDBW - SUCCESS!
 
 First correctly training version (last error fixed masks getting bug after untested change, numpy).
 Initial mode: training from color input which is converted to grayscale during reading.
@@ -103,7 +106,19 @@ df-ud-192-128-48-48-16_SAEHDBW_summary
 
 Trying 't', searching for higher sharpness; various settings tried.
 
--- Only 1.45 GB available. Connecting the monitor to the integrated GPU, but OS still reserves that amount and even with 77% usage after trying to create a bigger batch the model doesn't start training. (Windows 10 issue.)
+-- Only 1.45 GB available. Connecting the monitor to the integrated GPU, but OS still reserves that amount and sometimes even with just 77% usage when connecting a monitor to the integrated GPU, after trying to create a bigger batch the model doesn't start training. (Windows 10 issue.)
+
+
+## Sample pretraining and training experiences
+
+* SAEHDBW df-udt-mf-R192-128-48-32-16, 61K-62K it. batch 6 pretraining
+
+Still training:
+
+![image](https://user-images.githubusercontent.com/23367640/167448002-411f0a06-11fb-49ed-ae25-1b63eba3adc8.png)
+![image](https://user-images.githubusercontent.com/23367640/167447405-3b089aca-6a19-4ab6-86d4-12fb7d8d1ad5.png)
+![image](https://user-images.githubusercontent.com/23367640/167447472-e1a51ab4-f759-44d9-a632-96cacbf6ff61.png)
+
 
 * SAEHDBW liae-ud-r96-32-32-16; no pretraining; mouth and eye priority
 
@@ -113,14 +128,6 @@ Iterations: about 220-230 ms for batch size 8 and about 320-330 for 12 after 370
 
 * Modified faceset - reduced to about 14600 images, removed many which I didn't "like", having occlusions - microphones, hands etc., grayscale 384x384
 
-
-* SAEHDBW df-udt-mf-R192-128-48-32-16, 61K it. batch 6 pretraining
-
-Still training:
-
-![image](https://user-images.githubusercontent.com/23367640/167447167-af529e61-3916-45eb-b458-ec6c38442d2a.png)
-![image](https://user-images.githubusercontent.com/23367640/167447405-3b089aca-6a19-4ab6-86d4-12fb7d8d1ad5.png)
-![image](https://user-images.githubusercontent.com/23367640/167447472-e1a51ab4-f759-44d9-a632-96cacbf6ff61.png)
 
 
 * SAEHDBW liae-udt-r128-96-32-32-16 Pretraining; mouth and eye priority
