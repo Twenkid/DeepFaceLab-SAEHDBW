@@ -50,12 +50,51 @@ LIAE_UDT-192-96-32-48-16-SAEHDBW_SAEHDBW_summary -- 346 MB ==> would it be benef
 LIAE-UDT 192-96-32-48-16 vs LIAE-UD 192-96-48-48-16 ?
 
 
-DF-UD
+"G:\SAEHDBW\liae-udt-192-96-32-32-16-SAEHDBW_SAEHDBW_decoder.npy"
+"G:\SAEHDBW\liae-udt-192-96-32-32-16-SAEHDBW_SAEHDBW_inter_B.npy"
+"G:\SAEHDBW\liae-udt-192-96-32-32-16-SAEHDBW_SAEHDBW_encoder.npy"
+"G:\SAEHDBW\liae-udt-192-96-32-32-16-SAEHDBW_SAEHDBW_inter_AB.npy"
+"G:\SAEHDBW\liae-udt-192-96-32-32-16-SAEHDBW_SAEHDBW_data.dat"
+"G:\SAEHDBW\liae-udt-192-96-32-32-16-SAEHDBW_SAEHDBW_src_dst_opt.npy"
+234 МБ
+
+"G:\SAEHDBW\liae-ud-192-128-32-32-16_SAEHDBW_src_dst_opt.npy"
+"G:\SAEHDBW\liae-ud-192-128-32-32-16_SAEHDBW_encoder.npy"
+"G:\SAEHDBW\liae-ud-192-128-32-32-16_SAEHDBW_data.dat"
+"G:\SAEHDBW\liae-ud-192-128-32-32-16_SAEHDBW_decoder.npy"
+"G:\SAEHDBW\liae-ud-192-128-32-32-16_SAEHDBW_inter_AB.npy"
+"G:\SAEHDBW\liae-ud-192-128-32-32-16_SAEHDBW_inter_B.npy"
+273 МБ
+
+
+
+*** DF-UD ***
 
 dfud-r96-32-32-12-bw_SAEHDBW_summary.txt -- 104 M
 DF-UDT-256-96-32-32-16_SAEHDBW -- 281 M B: 4, 5 (OOM in minutes sometimes)
 DF-UDT-R96-64-24-24-16-SAEHDBW_SAEHDBW -- 50 MB , train @mf 
 
+"G:\SAEHDBW\df-udt-192-96-32-32-16_SAEHDBW_inter.npy"
+"G:\SAEHDBW\df-udt-192-96-32-32-16_SAEHDBW_encoder.npy"
+"G:\SAEHDBW\df-udt-192-96-32-32-16_SAEHDBW_data.dat"
+"G:\SAEHDBW\df-udt-192-96-32-32-16_SAEHDBW_src_dst_opt.npy"
+"G:\SAEHDBW\df-udt-192-96-32-32-16_SAEHDBW_decoder_dst.npy"
+"G:\SAEHDBW\df-udt-192-96-32-32-16_SAEHDBW_decoder_src.npy"
+285 МБ
+
+"G:\SAEHDBW\ df-udt-192-128-48-32-16_SAEHDBW_decoder_src.npy"
+"G:\SAEHDBW\ df-udt-192-128-48-32-16_SAEHDBW_encoder.npy"
+"G:\SAEHDBW\ df-udt-192-128-48-32-16_SAEHDBW_inter.npy"
+"G:\SAEHDBW\ df-udt-192-128-48-32-16_SAEHDBW_summary.txt"
+"G:\SAEHDBW\ df-udt-192-128-48-32-16_SAEHDBW_data.dat"
+"G:\SAEHDBW\ df-udt-192-128-48-32-16_SAEHDBW_src_dst_opt.npy"
+"G:\SAEHDBW\ df-udt-192-128-48-32-16_SAEHDBW_decoder_dst.npy"
+345 МБ
+
+df-ud-192-128-48-48-16_SAEHDBW_summary
+345 МБ
+
+(Check the quality of df-ud and df-udt with the same number of params - if there's enough patience to train them. Does 48-32 is good enough, varying number of channels/dimensions for the encoder and decoder? Encoder > decoder ... Also: 128/32/32? Mapping the default 256/64/64 for color 128 pix)
 
 
 
