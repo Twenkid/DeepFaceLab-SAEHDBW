@@ -113,6 +113,16 @@ Iterations: about 220-230 ms for batch size 8 and about 320-330 for 12 after 370
 
 * Modified faceset - reduced to about 14600 images, removed many which I didn't "like", having occlusions - microphones, hands etc., grayscale 384x384
 
+
+* SAEHDBW df-udt-mf-R192-128-48-32-16, 61K it. batch 6 pretraining
+
+Still training:
+
+![image](https://user-images.githubusercontent.com/23367640/167447167-af529e61-3916-45eb-b458-ec6c38442d2a.png)
+![image](https://user-images.githubusercontent.com/23367640/167447405-3b089aca-6a19-4ab6-86d4-12fb7d8d1ad5.png)
+![image](https://user-images.githubusercontent.com/23367640/167447472-e1a51ab4-f759-44d9-a632-96cacbf6ff61.png)
+
+
 * SAEHDBW liae-udt-r128-96-32-32-16 Pretraining; mouth and eye priority
 
 ![image](https://user-images.githubusercontent.com/23367640/167268956-ed171f28-8132-4762-ad9b-daf48c11ee17.png)
