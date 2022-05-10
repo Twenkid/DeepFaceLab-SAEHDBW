@@ -101,13 +101,13 @@ df-ud-192-128-48-48-16_SAEHDBW_summary
 
 
 
-
 ```
 
 Trying 't', searching for higher sharpness; various settings tried.
 
--- Only 1.45 GB available. Connecting the monitor to the integrated GPU, but OS still reserves that amount and sometimes even with just 77% usage when connecting a monitor to the integrated GPU, after trying to create a bigger batch the model doesn't start training. (Windows 10 issue.)
+* Only 1.45 GB available. Connecting the monitor to the integrated GPU, but OS still reserves that amount and sometimes even with just 77% usage when connecting a monitor to the integrated GPU, after trying to create a bigger batch the model doesn't start training. (Windows 10 issue.)
 
+* 10-5-2022 - Debugged the CUDA build so now I can use it. (I used the DirectX12 build so far, because the CUDA-one hanged with no output). The solution provided 33% speed-up! https://github.com/iperov/DeepFaceLab/issues/5515 "device_lib.list_local_devices() doesn't return in the CUDA build up to 2080 #5515"
 
 ## Sample pretraining and training experiences
 
@@ -115,6 +115,12 @@ Trying 't', searching for higher sharpness; various settings tried.
 
 Still training:
 
+116K:
+![image](https://user-images.githubusercontent.com/23367640/167688496-bd17aeb8-12cb-433f-9503-13e98ced5a8a.png)
+![image](https://user-images.githubusercontent.com/23367640/167688596-488dbfd3-55c4-47bc-9771-385aa93a57ff.png)
+![image](https://user-images.githubusercontent.com/23367640/167688617-41a41380-1719-48e4-bceb-834291e0e700.png)
+![image](https://user-images.githubusercontent.com/23367640/167688640-a3399de1-f12b-4247-a877-2bf79dcb019d.png)
+...
 ![image](https://user-images.githubusercontent.com/23367640/167518631-674dbefd-6fcf-42c4-aef1-d13e1e4a62dc.png)
 ![image](https://user-images.githubusercontent.com/23367640/167448002-411f0a06-11fb-49ed-ae25-1b63eba3adc8.png)
 ![image](https://user-images.githubusercontent.com/23367640/167447405-3b089aca-6a19-4ab6-86d4-12fb7d8d1ad5.png)
