@@ -115,7 +115,8 @@ Trying 't', searching for higher sharpness; various settings tried.
 
 Still training:
 
-116K:
+**116K**
+
 ![image](https://user-images.githubusercontent.com/23367640/167688496-bd17aeb8-12cb-433f-9503-13e98ced5a8a.png)
 ![image](https://user-images.githubusercontent.com/23367640/167688596-488dbfd3-55c4-47bc-9771-385aa93a57ff.png)
 ![image](https://user-images.githubusercontent.com/23367640/167688617-41a41380-1719-48e4-bceb-834291e0e700.png)
