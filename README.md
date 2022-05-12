@@ -89,6 +89,16 @@ Trying 't', searching for higher sharpness; various settings tried.
 
 * Still training:
 
+**304К**
+
+![image](https://user-images.githubusercontent.com/23367640/168078625-5782ea33-f880-4f06-8e3f-e7c7433d095e.png)
+![image](https://user-images.githubusercontent.com/23367640/168078934-f8b9e1d0-f9fb-4e42-8e12-73f9289c0ce5.png)
+![image](https://user-images.githubusercontent.com/23367640/168079007-1df3f993-97ab-4788-9c73-083f880e3e31.png)
+![image](https://user-images.githubusercontent.com/23367640/168079062-72c232bb-9067-401a-a06b-6f030e3a2d52.png)
+![image](https://user-images.githubusercontent.com/23367640/168079124-ac7ce422-7060-424f-9c97-34c37ec085bb.png)
+
+
+
 **302K**
 
 ![image](https://user-images.githubusercontent.com/23367640/168074945-5b931dfd-1409-4d57-8328-a36c1247de3c.png)
@@ -229,7 +239,13 @@ The middle split of the teeth is visible on some of the samples, but is still pa
 ![image](https://user-images.githubusercontent.com/23367640/167688617-41a41380-1719-48e4-bceb-834291e0e700.png)
 ![image](https://user-images.githubusercontent.com/23367640/167688640-a3399de1-f12b-4247-a877-2bf79dcb019d.png)
 ...
+
+**87К**
+
 ![image](https://user-images.githubusercontent.com/23367640/167518631-674dbefd-6fcf-42c4-aef1-d13e1e4a62dc.png)
+
+**61К-62К**
+
 ![image](https://user-images.githubusercontent.com/23367640/167448002-411f0a06-11fb-49ed-ae25-1b63eba3adc8.png)
 ![image](https://user-images.githubusercontent.com/23367640/167447405-3b089aca-6a19-4ab6-86d4-12fb7d8d1ad5.png)
 ![image](https://user-images.githubusercontent.com/23367640/167447472-e1a51ab4-f759-44d9-a632-96cacbf6ff61.png)
