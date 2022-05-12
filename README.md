@@ -87,6 +87,25 @@ Trying 't', searching for higher sharpness; various settings tried.
 
 Still training:
 
+**296K-297K** 12.5.2022
+
+![image](https://user-images.githubusercontent.com/23367640/168064008-4a8a9d4b-012d-49cc-84dc-df33b7fedd36.png)
+
+Still some pale teeth's splits - probably due to the rare pose (widely open mouth).
+
+As expected, this resolution model can't capture the facial relief of older people's portraits, but this is still the pretrain: will it represent at least some relief for two faces at this resolution? It did manage for the Biden model at liae-ud-96-96-32-32.
+
+[To do: Continue the training also of df-ud-192-128-48-48-16, df-ud 256-96-32-32 (DX12 only) and compare, and train also higher AED(M) dimension models for lower resolution, to see whether lower dimension models would not capture similar detail, due to the single-channel input.]
+
+
+![image](https://user-images.githubusercontent.com/23367640/168064178-ba1445fc-eb8c-43a1-9110-1334d3a84c6d.png)
+
+Frontal teeth sometimes are very good, but still a bit low contrast
+
+![image](https://user-images.githubusercontent.com/23367640/168064934-fe61b7f2-91a1-40c4-aebf-95511e05c148.png)
+
+
+
 **250K** ~ 1.7466/1.7354
 
 ![image](https://user-images.githubusercontent.com/23367640/167980250-0efd7387-8bc5-4a14-b134-05cc91522592.png)
