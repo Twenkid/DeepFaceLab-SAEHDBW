@@ -89,6 +89,30 @@ Trying 't', searching for higher sharpness; various settings tried.
 
 * Still training:
 
+**348К**
+
+![image](https://user-images.githubusercontent.com/23367640/168178090-4a053abf-6242-4dd1-baf5-2c5862d4f9c3.png)
+![image](https://user-images.githubusercontent.com/23367640/168178227-183cc653-2fe5-4ba1-a927-ebc49e18c8d5.png)
+![image](https://user-images.githubusercontent.com/23367640/168178349-d42376c5-0396-4df7-93b9-3937fb303790.png)
+![image](https://user-images.githubusercontent.com/23367640/168178496-b54f35a8-f0a8-4dcf-bd48-749be7dfce02.png)
+
+Still there are teeth which are not split, maybe due to the rare combination: only close to the lower lip. Usually the teeth are only up, below the upper lip.
+
+![image](https://user-images.githubusercontent.com/23367640/168178667-35f68825-783e-4906-bba8-bb98dd80807d.png)
+
+
+**340K**
+
+![image](https://user-images.githubusercontent.com/23367640/168166318-8cbe33ba-a401-487e-9074-40f764d3e738.png)
+![image](https://user-images.githubusercontent.com/23367640/168178152-7611fbd0-23af-453d-9faa-19e4b058bb0c.png)
+
+**336K**
+
+![image](https://user-images.githubusercontent.com/23367640/168158108-64121437-ca19-4cb6-882f-bbad24989ddf.png)
+![image](https://user-images.githubusercontent.com/23367640/168158552-5901ab3c-c186-49e1-bcb7-185feb0f39ff.png)
+![image](https://user-images.githubusercontent.com/23367640/168158335-bdea3786-d9a2-457d-9c6b-5bf0ca91be12.png)
+
+
 **333K**
 
 ![image](https://user-images.githubusercontent.com/23367640/168144862-2946cde9-d05a-4d07-b8fb-e5149631ed05.png)
