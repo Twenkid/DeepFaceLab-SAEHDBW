@@ -87,6 +87,13 @@ Trying 't', searching for higher sharpness; various settings tried.
 
 Still training:
 
+**250K** ~ 1.7466/1.7354
+
+![image](https://user-images.githubusercontent.com/23367640/167980250-0efd7387-8bc5-4a14-b134-05cc91522592.png)
+![image](https://user-images.githubusercontent.com/23367640/167980321-c415cbd0-cc50-4693-afb2-eac0f444d81f.png)
+![image](https://user-images.githubusercontent.com/23367640/167980479-6816ab9b-bb8b-4d9d-84ab-3108f5783659.png)
+
+
 **240K-241K** - well developed teeth in many samples
 
 ![image](https://user-images.githubusercontent.com/23367640/167969467-b43934c5-045f-4621-866d-a335c4f1de41.png)
