@@ -2,7 +2,7 @@
 
 ## Notes, experience, tools, deepfakes
 
-~ 22.4.2022 -- Minor iterface changes (more keys for save, preview update etc.; changes of preview period and auto saving; later: forcing generation of new previews instead of keeping the same etc.); reviewing the code
+~ 22.4.2022 -- Minor iterface changes (more keys for save, save preview periods and auto saving;later: possible forcing generation of new previews instead of keeping the same for the whole training etc.; reviewing the code
 
 ~ 25.4.2022? --> Started working on SAEHDBW - Grayscale deepfake model; research, experiments, modifications of the channel dimensions, studying the NN model.
 
@@ -53,23 +53,9 @@ LIAE_UDT-192-96-32-48-16-SAEHDBW_SAEHDBW_summary -- 346 MB ==> would it be benef
 LIAE-UDT 192-96-32-48-16 vs LIAE-UD 192-96-48-48-16 ?
 
 
-"G:\SAEHDBW\liae-udt-192-96-32-32-16-SAEHDBW_SAEHDBW_decoder.npy"
-"G:\SAEHDBW\liae-udt-192-96-32-32-16-SAEHDBW_SAEHDBW_inter_B.npy"
-"G:\SAEHDBW\liae-udt-192-96-32-32-16-SAEHDBW_SAEHDBW_encoder.npy"
-"G:\SAEHDBW\liae-udt-192-96-32-32-16-SAEHDBW_SAEHDBW_inter_AB.npy"
-"G:\SAEHDBW\liae-udt-192-96-32-32-16-SAEHDBW_SAEHDBW_data.dat"
-"G:\SAEHDBW\liae-udt-192-96-32-32-16-SAEHDBW_SAEHDBW_src_dst_opt.npy"
-234 МБ
+"G:\SAEHDBW\liae-udt-192-96-32-32-16-SAEHDBW_SAEHDBW... - 234 МБ
 
-"G:\SAEHDBW\liae-ud-192-128-32-32-16_SAEHDBW_src_dst_opt.npy"
-"G:\SAEHDBW\liae-ud-192-128-32-32-16_SAEHDBW_encoder.npy"
-"G:\SAEHDBW\liae-ud-192-128-32-32-16_SAEHDBW_data.dat"
-"G:\SAEHDBW\liae-ud-192-128-32-32-16_SAEHDBW_decoder.npy"
-"G:\SAEHDBW\liae-ud-192-128-32-32-16_SAEHDBW_inter_AB.npy"
-"G:\SAEHDBW\liae-ud-192-128-32-32-16_SAEHDBW_inter_B.npy"
-273 МБ
-
-
+"G:\SAEHDBW\liae-ud-192-128-32-32-16_SAEHDBW_src_dst_opt.npy" - 273 МБ
 
 *** DF-UD ***
 
@@ -77,29 +63,13 @@ dfud-r96-32-32-12-bw_SAEHDBW_summary.txt -- 104 M
 DF-UDT-256-96-32-32-16_SAEHDBW -- 281 M B: 4, 5 (OOM in minutes sometimes)
 DF-UDT-R96-64-24-24-16-SAEHDBW_SAEHDBW -- 50 MB , train @mf 
 
-"G:\SAEHDBW\df-udt-192-96-32-32-16_SAEHDBW_inter.npy"
-"G:\SAEHDBW\df-udt-192-96-32-32-16_SAEHDBW_encoder.npy"
-"G:\SAEHDBW\df-udt-192-96-32-32-16_SAEHDBW_data.dat"
-"G:\SAEHDBW\df-udt-192-96-32-32-16_SAEHDBW_src_dst_opt.npy"
-"G:\SAEHDBW\df-udt-192-96-32-32-16_SAEHDBW_decoder_dst.npy"
-"G:\SAEHDBW\df-udt-192-96-32-32-16_SAEHDBW_decoder_src.npy"
-285 МБ
+"G:\SAEHDBW\df-udt-192-96-32-32-16_SAEHDBW - 285 МБ
 
-"G:\SAEHDBW\ df-udt-192-128-48-32-16_SAEHDBW_decoder_src.npy"
-"G:\SAEHDBW\ df-udt-192-128-48-32-16_SAEHDBW_encoder.npy"
-"G:\SAEHDBW\ df-udt-192-128-48-32-16_SAEHDBW_inter.npy"
-"G:\SAEHDBW\ df-udt-192-128-48-32-16_SAEHDBW_summary.txt"
-"G:\SAEHDBW\ df-udt-192-128-48-32-16_SAEHDBW_data.dat"
-"G:\SAEHDBW\ df-udt-192-128-48-32-16_SAEHDBW_src_dst_opt.npy"
-"G:\SAEHDBW\ df-udt-192-128-48-32-16_SAEHDBW_decoder_dst.npy"
-345 МБ
+"G:\SAEHDBW\ df-udt-192-128-48-32-16_SAEHDBW - 345 МБ
 
-df-ud-192-128-48-48-16_SAEHDBW_summary
-345 МБ
+df-ud-192-128-48-48-16_SAEHDBW_summary - 345 МБ
 
 (Check the quality of df-ud and df-udt with the same number of params - if there's enough patience to train them. Does 48-32 is good enough, varying number of channels/dimensions for the encoder and decoder? Encoder > decoder ... Also: 128/32/32? Mapping the default 256/64/64 for color 128 pix)
-
-
 
 ```
 
@@ -108,12 +78,112 @@ Trying 't', searching for higher sharpness; various settings tried.
 * Only 1.45 GB available. Connecting the monitor to the integrated GPU, but OS still reserves that amount and sometimes even with just 77% usage when connecting a monitor to the integrated GPU, after trying to create a bigger batch the model doesn't start training. (Windows 10 issue.)
 
 * 10-5-2022 - Debugged the CUDA build so now I can use it. (I used the DirectX12 build so far, because the CUDA-one hanged with no output). The solution provided 33% speed-up! https://github.com/iperov/DeepFaceLab/issues/5515 "device_lib.list_local_devices() doesn't return in the CUDA build up to 2080 #5515"
+* 
+* 11.5.2022 - After a series of GPU-related crashes when trying to run big models at the edge in the CUDA build, with sizes which previously were training in the DirectX12 version, it seems that the DX12 version, i.e. tensorflow-directml uses less memory than CUDA. It is possible to train: DF-UDT-256-96-32-32-16_SAEHDBW --> as recorded recently: batch 4: ~ 1200 ms, (~ 1150 ms slightly more overclock); batch 5 ~ 1500 ms (OOM errors occasionaly).
 
 ## Sample pretraining and training experiences
 
 * SAEHDBW df-udt-mf-R192-128-48-32-16, 61K-62K it. batch 6 pretraining
 
 Still training:
+
+**240K-241K** - well developed teeth in many samples
+
+![image](https://user-images.githubusercontent.com/23367640/167969467-b43934c5-045f-4621-866d-a335c4f1de41.png)
+![image](https://user-images.githubusercontent.com/23367640/167969537-fad5bede-c8ee-49e0-a5c4-6d075227b68c.png)
+![image](https://user-images.githubusercontent.com/23367640/167969663-d409e124-a2a5-4c5e-9f74-944d10145b5d.png)
+![image](https://user-images.githubusercontent.com/23367640/167970000-0b062d31-0a65-4c62-983a-4d6eaf238366.png)
+![image](https://user-images.githubusercontent.com/23367640/167970149-07dea55e-ed89-4322-a944-beb7351c68e0.png)
+![image](https://user-images.githubusercontent.com/23367640/167970790-1c8c705b-eb55-4f6f-9778-22f59af92e63.png)
+
+Glasses:
+
+![image](https://user-images.githubusercontent.com/23367640/167969723-e9c29513-b847-431e-82c6-9b028dcc3893.png)
+![image](https://user-images.githubusercontent.com/23367640/167969772-b5247f32-55c8-4bbc-8341-db50cc241abc.png)
+![image](https://user-images.githubusercontent.com/23367640/167969819-afb3c2c5-98a7-4e44-ab30-118bd8279e43.png)
+![image](https://user-images.githubusercontent.com/23367640/167969850-18717915-e9b1-42d6-baeb-fd68d3970c8f.png)
+
+Detailed eyes with irises. Even highlights sometimes.
+
+![image](https://user-images.githubusercontent.com/23367640/167970114-93b0f9c5-a669-4884-a09a-3f3a86c48917.png)
+![image](https://user-images.githubusercontent.com/23367640/167970242-f2f9f981-99e9-4e67-a8c3-4a1ee2b77edd.png)
+![image](https://user-images.githubusercontent.com/23367640/167970274-5e04667d-5d14-4a71-a5a4-f21f19502f43.png)
+![image](https://user-images.githubusercontent.com/23367640/167970418-fc9d6792-7921-4c8f-a88f-e8fdc991b21a.png)
+
+**225K-231K**
+
+![image](https://user-images.githubusercontent.com/23367640/167972416-87c81808-c5bf-40f9-96f1-b72902b3add7.png)
+![image](https://user-images.githubusercontent.com/23367640/167972460-e2cfbc75-3796-497f-a3e7-35d99735c949.png)
+![image](https://user-images.githubusercontent.com/23367640/167972500-27d63e9d-502e-4836-8cdb-9558aea0fe11.png)
+![image](https://user-images.githubusercontent.com/23367640/167972514-087f6f63-11fa-4440-9ead-02f22c125297.png)
+![image](https://user-images.githubusercontent.com/23367640/167972531-f81ca0d0-1fee-4e09-9a59-dbd477744d3f.png)
+![image](https://user-images.githubusercontent.com/23367640/167972549-9439d97a-1b00-44f3-b51d-014e6cfd032e.png)
+![image](https://user-images.githubusercontent.com/23367640/167972597-c0a6da3c-ed26-4084-b356-ef9ab978340a.png)
+![image](https://user-images.githubusercontent.com/23367640/167972606-f328bbb2-2c03-4ffc-97d0-613211dce386.png)
+![image](https://user-images.githubusercontent.com/23367640/167972654-4e772d24-1783-492b-b6ac-ae18262b4fa8.png)
+![image](https://user-images.githubusercontent.com/23367640/167972703-5ea47bdc-dbea-4493-b0bd-793ddb4106a6.png)
+![image](https://user-images.githubusercontent.com/23367640/167972711-f4dff91f-9b66-4b92-b4a4-f5480b7e1a91.png)
+![image](https://user-images.githubusercontent.com/23367640/167972726-a1d097b4-d9cd-4578-8a80-0f0f87c44c4c.png)
+![image](https://user-images.githubusercontent.com/23367640/167972741-9fa06d4f-4b82-4023-9245-719d7eccb26e.png)
+![image](https://user-images.githubusercontent.com/23367640/167972752-70eb5f42-614d-4700-8b63-4ccfaa59a651.png)
+![image](https://user-images.githubusercontent.com/23367640/167972789-4e948326-7ca5-4ec9-81c7-880e2a5a7d1f.png)
+![image](https://user-images.githubusercontent.com/23367640/167972813-049205db-2d0f-4fdb-8e64-29c81a815c93.png)
+![image](https://user-images.githubusercontent.com/23367640/167972834-037e20ee-ab43-42a8-bf36-b2ad37d191e1.png)
+
+
+**214K**
+
+![image](https://user-images.githubusercontent.com/23367640/167972377-b4454f86-f74d-4eec-99c1-b082e80a6630.png)
+
+
+**205K-206K**
+
+Some teeths are forming, other smiles are too bright. Some glasses.
+
+![image](https://user-images.githubusercontent.com/23367640/167972088-6d13b780-7ca8-4796-ba33-e40afe1cf8ae.png)
+![image](https://user-images.githubusercontent.com/23367640/167972107-4adf0a8d-eaee-47f3-963f-9907ca8751f9.png)
+![image](https://user-images.githubusercontent.com/23367640/167972136-27c6a451-d764-46fc-9571-d77d43bbee39.png)
+![image](https://user-images.githubusercontent.com/23367640/167972146-413dd44f-7e35-43d4-a483-670aa38e7f42.png)
+![image](https://user-images.githubusercontent.com/23367640/167972160-0894cc54-e248-401f-9815-b8a7d367b2ea.png)
+![image](https://user-images.githubusercontent.com/23367640/167972181-9153fd34-c797-4865-9ce8-e94c349fd3a3.png)
+![image](https://user-images.githubusercontent.com/23367640/167972198-694abe09-0a53-4415-9703-c08e37a36bd6.png)
+![image](https://user-images.githubusercontent.com/23367640/167972230-b209484c-ba34-4e8d-a03a-daff7fb436d4.png)
+![image](https://user-images.githubusercontent.com/23367640/167972273-bfe84412-6711-4bf7-a0d6-256ac267b576.png)
+![image](https://user-images.githubusercontent.com/23367640/167972286-41e70786-e63d-4207-93b5-37b8f21a4a0e.png)
+
+
+**183K-185K**
+
+![image](https://user-images.githubusercontent.com/23367640/167971813-bcccf5dc-ee46-4a12-beb4-41585883ec8c.png)
+![image](https://user-images.githubusercontent.com/23367640/167971897-a93bb7c3-9ecc-4ae6-9cf3-3da43792805d.png)
+![image](https://user-images.githubusercontent.com/23367640/167971921-52ab80af-e517-4ce7-8e9d-9a4da8be0057.png)
+![image](https://user-images.githubusercontent.com/23367640/167971942-767ca749-dbb1-43b3-a65d-ad9b51761e32.png)
+![image](https://user-images.githubusercontent.com/23367640/167971958-a5db0d44-32e8-46da-ada1-7a9634ee5453.png)
+![image](https://user-images.githubusercontent.com/23367640/167971979-2a8035fe-519d-40a4-9650-87af6df690c6.png)
+![image](https://user-images.githubusercontent.com/23367640/167971999-5b1aff52-48c2-4d99-8204-2f933ec19f66.png)
+![image](https://user-images.githubusercontent.com/23367640/167972037-39936eea-44d9-4683-8056-68800363d2be.png)
+
+
+**171K**
+
+![image](https://user-images.githubusercontent.com/23367640/167971708-40e75ca4-4d87-470f-8033-f16803b42554.png)
+![image](https://user-images.githubusercontent.com/23367640/167971745-4772b688-d32c-4772-ad85-a55072a94721.png)
+![image](https://user-images.githubusercontent.com/23367640/167971787-e020dd08-a83c-4b3e-bebe-aeab6e7cbdd6.png)
+
+
+**161K**
+
+![image](https://user-images.githubusercontent.com/23367640/167971615-ddbe1115-02e1-44d4-8b2d-af9941e702f3.png)
+
+![image](https://user-images.githubusercontent.com/23367640/167971638-a3dc6ea4-9db4-4d47-9f31-7833b77dbc34.png)
+![image](https://user-images.githubusercontent.com/23367640/167971662-4222a784-f537-4a9c-9629-eada2b8d9b4b.png)
+
+**151K**
+
+The middle split of the teeth is visible on some of the samples, but is still pale:
+
+![image](https://user-images.githubusercontent.com/23367640/167971544-69bde746-fe60-49cc-8ba5-3af0962c9779.png)
+
 
 **116K**
 
@@ -388,3 +458,52 @@ Starting. Target iteration: 10001. Press "Enter" to stop training and save model
 Pretraining
 
 ```
+
+
+======
+
+
+
+"G:\SAEHDBW\liae-udt-192-96-32-32-16-SAEHDBW_SAEHDBW_decoder.npy"
+"G:\SAEHDBW\liae-udt-192-96-32-32-16-SAEHDBW_SAEHDBW_inter_B.npy"
+"G:\SAEHDBW\liae-udt-192-96-32-32-16-SAEHDBW_SAEHDBW_encoder.npy"
+"G:\SAEHDBW\liae-udt-192-96-32-32-16-SAEHDBW_SAEHDBW_inter_AB.npy"
+"G:\SAEHDBW\liae-udt-192-96-32-32-16-SAEHDBW_SAEHDBW_data.dat"
+"G:\SAEHDBW\liae-udt-192-96-32-32-16-SAEHDBW_SAEHDBW_src_dst_opt.npy"
+234 МБ
+
+"G:\SAEHDBW\liae-ud-192-128-32-32-16_SAEHDBW_src_dst_opt.npy"
+"G:\SAEHDBW\liae-ud-192-128-32-32-16_SAEHDBW_encoder.npy"
+"G:\SAEHDBW\liae-ud-192-128-32-32-16_SAEHDBW_data.dat"
+"G:\SAEHDBW\liae-ud-192-128-32-32-16_SAEHDBW_decoder.npy"
+"G:\SAEHDBW\liae-ud-192-128-32-32-16_SAEHDBW_inter_AB.npy"
+"G:\SAEHDBW\liae-ud-192-128-32-32-16_SAEHDBW_inter_B.npy"
+273 МБ
+
+
+
+*** DF-UD ***
+
+dfud-r96-32-32-12-bw_SAEHDBW_summary.txt -- 104 M
+DF-UDT-256-96-32-32-16_SAEHDBW -- 281 M B: 4, 5 (OOM in minutes sometimes)
+DF-UDT-R96-64-24-24-16-SAEHDBW_SAEHDBW -- 50 MB , train @mf 
+
+"G:\SAEHDBW\df-udt-192-96-32-32-16_SAEHDBW_inter.npy"
+"G:\SAEHDBW\df-udt-192-96-32-32-16_SAEHDBW_encoder.npy"
+"G:\SAEHDBW\df-udt-192-96-32-32-16_SAEHDBW_data.dat"
+"G:\SAEHDBW\df-udt-192-96-32-32-16_SAEHDBW_src_dst_opt.npy"
+"G:\SAEHDBW\df-udt-192-96-32-32-16_SAEHDBW_decoder_dst.npy"
+"G:\SAEHDBW\df-udt-192-96-32-32-16_SAEHDBW_decoder_src.npy"
+285 МБ
+
+"G:\SAEHDBW\ df-udt-192-128-48-32-16_SAEHDBW_decoder_src.npy"
+"G:\SAEHDBW\ df-udt-192-128-48-32-16_SAEHDBW_encoder.npy"
+"G:\SAEHDBW\ df-udt-192-128-48-32-16_SAEHDBW_inter.npy"
+"G:\SAEHDBW\ df-udt-192-128-48-32-16_SAEHDBW_summary.txt"
+"G:\SAEHDBW\ df-udt-192-128-48-32-16_SAEHDBW_data.dat"
+"G:\SAEHDBW\ df-udt-192-128-48-32-16_SAEHDBW_src_dst_opt.npy"
+"G:\SAEHDBW\ df-udt-192-128-48-32-16_SAEHDBW_decoder_dst.npy"
+345 МБ
+
+df-ud-192-128-48-48-16_SAEHDBW_summary
+345 МБ
