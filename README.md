@@ -89,6 +89,11 @@ Trying 't', searching for higher sharpness; various settings tried.
 
 * Still training:
 
+**353К**
+
+![image](https://user-images.githubusercontent.com/23367640/168183414-8fff3805-5bcc-4748-91c8-b267a257138d.png)
+
+
 **348К-349K**
 
 ![image](https://user-images.githubusercontent.com/23367640/168179786-1629ffc4-27ec-4434-b992-f21af12fb870.png)
