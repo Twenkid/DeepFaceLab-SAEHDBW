@@ -81,11 +81,13 @@ Trying 't', searching for higher sharpness; various settings tried.
 * 
 * 11.5.2022 - After a series of GPU-related crashes when trying to run big models at the edge in the CUDA build, with sizes which previously were training in the DirectX12 version, it seems that the DX12 version, i.e. tensorflow-directml uses less memory than CUDA. It is possible to train: DF-UDT-256-96-32-32-16_SAEHDBW --> as recorded recently: batch 4: ~ 1200 ms, (~ 1150 ms slightly more overclock); batch 5 ~ 1500 ms (OOM errors occasionaly).
 
-## Sample pretraining and training experiences
+## Sample pretraining and training experiments
 
-* SAEHDBW df-udt-mf-R192-128-48-32-16, 61K-62K it. batch 6 pretraining
+* SAEHDBW df-udt-mf-R192-128-48-32-16, batch 6 pretraining on the custom subset of the built-in faceset.pak, reextracted* at 384x384 grayscale and with removed many images, lastly about 14634. It still has a few "bad" samples with babies and hand in the mouth, some musician with an instrument etc, hair covering some of the eye etc. Portraits with glasses are kept, except extremely strange ones. Microphones, hands and other objects crossing the face are removed, expect a few and when it is slightly touching; etc.
 
-Still training:
+* 12.5.2022 Note: They had better be resized instead of reextraceted, using a modified DFL script for resizing, but I haven't reached that part of the code then.
+
+* Still training:
 
 **302K**
 
