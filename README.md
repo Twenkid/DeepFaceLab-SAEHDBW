@@ -89,7 +89,7 @@ Trying 't', searching for higher sharpness; various settings tried.
 
 * Still training:
 
-**348К**
+**348К-349K**
 
 ![image](https://user-images.githubusercontent.com/23367640/168178090-4a053abf-6242-4dd1-baf5-2c5862d4f9c3.png)
 ![image](https://user-images.githubusercontent.com/23367640/168178227-183cc653-2fe5-4ba1-a927-ebc49e18c8d5.png)
@@ -99,6 +99,7 @@ Trying 't', searching for higher sharpness; various settings tried.
 Still there are teeth which are not split, maybe due to the rare combination: only close to the lower lip. Usually the teeth are only up, below the upper lip.
 
 ![image](https://user-images.githubusercontent.com/23367640/168178667-35f68825-783e-4906-bba8-bb98dd80807d.png)
+![image](https://user-images.githubusercontent.com/23367640/168179163-97bbf9f5-df0e-406d-99f5-5a41b5c68788.png)
 
 
 **340K**
