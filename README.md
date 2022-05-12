@@ -91,6 +91,8 @@ Trying 't', searching for higher sharpness; various settings tried.
 
 **348К-349K**
 
+![image](https://user-images.githubusercontent.com/23367640/168179786-1629ffc4-27ec-4434-b992-f21af12fb870.png)
+
 ![image](https://user-images.githubusercontent.com/23367640/168178090-4a053abf-6242-4dd1-baf5-2c5862d4f9c3.png)
 ![image](https://user-images.githubusercontent.com/23367640/168178227-183cc653-2fe5-4ba1-a927-ebc49e18c8d5.png)
 ![image](https://user-images.githubusercontent.com/23367640/168178349-d42376c5-0396-4df7-93b9-3937fb303790.png)
