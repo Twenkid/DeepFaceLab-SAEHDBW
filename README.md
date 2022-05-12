@@ -96,10 +96,14 @@ Trying 't', searching for higher sharpness; various settings tried.
 ![image](https://user-images.githubusercontent.com/23367640/168178349-d42376c5-0396-4df7-93b9-3937fb303790.png)
 ![image](https://user-images.githubusercontent.com/23367640/168178496-b54f35a8-f0a8-4dcf-bd48-749be7dfce02.png)
 
+Some pale teeth-splits. possibly mask- and face-type-related (mf):
+
+![image](https://user-images.githubusercontent.com/23367640/168179163-97bbf9f5-df0e-406d-99f5-5a41b5c68788.png)
+
 Still there are teeth which are not split, maybe due to the rare combination: only close to the lower lip. Usually the teeth are only up, below the upper lip.
 
 ![image](https://user-images.githubusercontent.com/23367640/168178667-35f68825-783e-4906-bba8-bb98dd80807d.png)
-![image](https://user-images.githubusercontent.com/23367640/168179163-97bbf9f5-df0e-406d-99f5-5a41b5c68788.png)
+
 
 
 **340K**
