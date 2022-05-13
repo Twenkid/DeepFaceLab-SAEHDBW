@@ -89,6 +89,46 @@ Trying 't', searching for higher sharpness; various settings tried.
 
 * Still training:
 
+**437К-440К**
+![image](https://user-images.githubusercontent.com/23367640/168324534-1bc11fa0-9e79-4fe6-99fb-ae68e86ddd8c.png)
+![image](https://user-images.githubusercontent.com/23367640/168324574-1dfd887c-0fd0-4d17-bf64-66d0aad52c8e.png)
+![image](https://user-images.githubusercontent.com/23367640/168324693-2dae33cd-0e6f-4b77-85e5-524472453468.png)
+![image](https://user-images.githubusercontent.com/23367640/168324718-eee4981b-d107-46c2-9144-dcc202009ed7.png)
+![image](https://user-images.githubusercontent.com/23367640/168324736-c71ccf32-7c2d-418a-b282-1f51acbe8b63.png)
+![image](https://user-images.githubusercontent.com/23367640/168324811-57bcce2b-a5f6-428b-9320-44b671c587f7.png)
+![image](https://user-images.githubusercontent.com/23367640/168324919-a702791f-91e5-452b-8bfc-4490b9bfb180.png)
+![image](https://user-images.githubusercontent.com/23367640/168325031-4e345e58-3113-4ef5-9ae1-1bf0124cfdfa.png)
+![image](https://user-images.githubusercontent.com/23367640/168325090-b9eb2ea3-437e-4be2-a2ab-c2d1997c8d57.png)
+![image](https://user-images.githubusercontent.com/23367640/168325327-9239a6fa-fe77-4d72-9f52-9364a7ecd7c9.png)
+![image](https://user-images.githubusercontent.com/23367640/168325477-c2f420c6-a4a1-4201-9bf4-1de961529c7a.png)
+![image](https://user-images.githubusercontent.com/23367640/168325677-e2008598-9f56-415c-b9e1-d95d253eb80f.png)
+![image](https://user-images.githubusercontent.com/23367640/168328514-7ef2d4df-b6b1-4fe6-8fb7-be754a6d25dc.png)
+![image](https://user-images.githubusercontent.com/23367640/168328617-57c5980c-38a9-4c7f-bb5a-d17414b8db35.png)
+![image](https://user-images.githubusercontent.com/23367640/168328651-e1249687-89d5-4c12-b7b8-70bc8d52593f.png)
+![image](https://user-images.githubusercontent.com/23367640/168329022-01c87687-ca2b-4411-8f18-4d780e0ac3c5.png)
+![image](https://user-images.githubusercontent.com/23367640/168329148-236be8bd-6ab1-407a-b805-3da5221844e0.png)
+
+**440К** Glasses
+
+![image](https://user-images.githubusercontent.com/23367640/168329316-0a47f979-9f35-4dc0-8eca-2654c13992d2.png)
+![image](https://user-images.githubusercontent.com/23367640/168329357-7ce2cd52-f623-4d08-a6a4-c499dbdf7fba.png)
+![image](https://user-images.githubusercontent.com/23367640/168329453-e9acdb9c-877f-4733-b40d-8a65e171505d.png)
+![image](https://user-images.githubusercontent.com/23367640/168329508-845fd36f-6a04-4048-bcd6-3369a7bd011f.png)
+![image](https://user-images.githubusercontent.com/23367640/168329574-cbe3579e-090a-46c2-bc0e-f8a4bfd96f7a.png)
+![image](https://user-images.githubusercontent.com/23367640/168329686-1e33d423-1f8b-458b-b5bc-3120f56be475.png)
+![image](https://user-images.githubusercontent.com/23367640/168329710-fe0ff87b-a7e7-4e75-a7a6-7493f68c4666.png)
+![image](https://user-images.githubusercontent.com/23367640/168329750-6af23704-ec1f-4336-b1ce-15976d2ea1a7.png)
+![image](https://user-images.githubusercontent.com/23367640/168329821-6fd1b64a-1d87-4d06-90b4-c729c69b32ae.png)
+![image](https://user-images.githubusercontent.com/23367640/168329841-0bb4a603-736c-4e65-9c4f-495f6af8b8b6.png)
+![image](https://user-images.githubusercontent.com/23367640/168330144-965691c4-3c4f-4f8b-8328-fba5d40d24f3.png)
+![image](https://user-images.githubusercontent.com/23367640/168330251-c086cfff-5bc7-4cf2-94ca-0916d4b377c0.png)
+![image](https://user-images.githubusercontent.com/23367640/168330328-8e884f50-016a-4bbe-954d-385e97d72516.png)
+![image](https://user-images.githubusercontent.com/23367640/168330386-b32946b6-2a1b-4fa2-a321-0b8a7b8f3827.png)
+![image](https://user-images.githubusercontent.com/23367640/168330681-ff3da96b-a263-4240-93bc-ab86a50e90fa.png)
+
+
+
+
 **361K-362K**
 
 ![image](https://user-images.githubusercontent.com/23367640/168192040-dc135b05-c7c6-42bd-9539-705c9d336b22.png)
