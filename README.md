@@ -65,11 +65,16 @@ DF-UDT-R96-64-24-24-16-SAEHDBW_SAEHDBW -- 50 MB , train @mf
 
 "G:\SAEHDBW\df-udt-192-96-32-32-16_SAEHDBW - 285 МБ
 
-"G:\SAEHDBW\ df-udt-192-128-48-32-16_SAEHDBW - 345 МБ
+"G:\SAEHDBW\df-udt-192-128-48-32-16_SAEHDBW - 345 МБ
 
 df-ud-192-128-48-48-16_SAEHDBW_summary - 345 МБ
 
 (Check the quality of df-ud and df-udt with the same number of params - if there's enough patience to train them. Does 48-32 is good enough, varying number of channels/dimensions for the encoder and decoder? Encoder > decoder ... Also: 128/32/32? Mapping the default 256/64/64 for color 128 pix)
+
+== Какво ще е качеството? Сравнимо ли ще е? Доколко няма да достигнат размерностите?
+
+df-udt-192-80-32-32-16_SAEHDBW -- 260 MB, batch 8 speed ~ or faster than  df-udt-192-128-48-32-16_SAEHDBW @  batch 6  #13-5-2022, ~21h;
+
 
 ```
 
