@@ -89,6 +89,20 @@ Trying 't', searching for higher sharpness; various settings tried.
 
 * Still training:
 
+**441K-** 
+
+Eyelashes
+
+![image](https://user-images.githubusercontent.com/23367640/168331381-0c9123c7-cc2b-46e6-8efe-f29e8e05547e.png)
+![image](https://user-images.githubusercontent.com/23367640/168331557-ba4ba72e-7621-4934-8758-24c523fd2bf1.png)
+![image](https://user-images.githubusercontent.com/23367640/168331593-54207f0f-3569-4be9-9174-676a65c913cb.png)
+![image](https://user-images.githubusercontent.com/23367640/168331611-acabaab0-fbb8-4ce6-968a-b552331a4768.png)
+
+Teeth
+![image](https://user-images.githubusercontent.com/23367640/168331982-671b7f6b-ba16-4037-8c69-d69e097d269d.png)
+
+
+
 **437К-440К**
 ![image](https://user-images.githubusercontent.com/23367640/168324534-1bc11fa0-9e79-4fe6-99fb-ae68e86ddd8c.png)
 ![image](https://user-images.githubusercontent.com/23367640/168324574-1dfd887c-0fd0-4d17-bf64-66d0aad52c8e.png)
@@ -125,6 +139,11 @@ Trying 't', searching for higher sharpness; various settings tried.
 ![image](https://user-images.githubusercontent.com/23367640/168330328-8e884f50-016a-4bbe-954d-385e97d72516.png)
 ![image](https://user-images.githubusercontent.com/23367640/168330386-b32946b6-2a1b-4fa2-a321-0b8a7b8f3827.png)
 ![image](https://user-images.githubusercontent.com/23367640/168330681-ff3da96b-a263-4240-93bc-ab86a50e90fa.png)
+![image](https://user-images.githubusercontent.com/23367640/168331297-7b4e6685-8a8c-4ddb-959a-07cb7968cb44.png)
+![image](https://user-images.githubusercontent.com/23367640/168331480-ac0548ce-bef6-4ab9-8d77-ee20e4ce4201.png)
+
+Missing glasses:
+![image](https://user-images.githubusercontent.com/23367640/168331757-1f436ae2-6d37-40b7-a235-0e1a88e9b66e.png)
 
 
 
