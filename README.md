@@ -89,6 +89,16 @@ Trying 't', searching for higher sharpness; various settings tried.
 
 * Still training:
 
+**361K-362K**
+
+![image](https://user-images.githubusercontent.com/23367640/168192040-dc135b05-c7c6-42bd-9539-705c9d336b22.png)
+![image](https://user-images.githubusercontent.com/23367640/168192099-5678c6de-5aa3-4170-aa93-cb5d9f188f65.png)
+![image](https://user-images.githubusercontent.com/23367640/168192169-9d36389b-74a4-4583-8d41-0be4d99328c7.png)
+![image](https://user-images.githubusercontent.com/23367640/168192216-0f45d8e3-8f56-4907-a25a-8f3cc639a7d8.png)
+![image](https://user-images.githubusercontent.com/23367640/168192288-d00ad868-2978-4d1e-b442-b22c3b226519.png)
+![image](https://user-images.githubusercontent.com/23367640/168192367-1fe5a2d0-f718-4bad-a2e4-bb36af5fbf75.png)
+
+
 **359К**
 
 ![image](https://user-images.githubusercontent.com/23367640/168189619-834b3c90-12ab-4c1c-9bd5-7b6fac163ff3.png)
