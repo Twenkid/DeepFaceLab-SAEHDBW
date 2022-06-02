@@ -17,6 +17,10 @@ First correctly training version (last error fixed masks getting bug after untes
 Initial mode: training from color input which is converted to grayscale during reading.
 Now the model can train on 224x224 and 192x192 images on a 2 GB Geforce 750 Ti. (The quality etc. is to be checked at various AE dims, encoder dims, decoder dims.)
 
+
+**Note:** _Initially working with the DirectX12 build with tensorflow-directml due to the CUDA version which didn't run (that issue was resolved later on 10.5.2022). The CPU is Core i5 6500. Iteration time varies and depends also on the CPU power mode (Economical/Balanced and their details) and the overclocking of the GPU. Initially I didn't use additional overclock (boost clock was up to 1176 MHz), from some moment I started using MSI Afterburner which allowed going above 1415 MHz for core clock and above 2900 MHz for RAM and that was not the maximum, but it doesn't sustain it all the time due to temperature and power limits set for safety and it may get unstable and interrupt, while the gain is small. When the batch size is bigger or there is heavy CPU processing, e.g. some color transfer modes such as SOT, the CPU load is higher._
+
+
 liae-ud-r192-ae-96-48-48-12-bw_SAEHDBW  x f, ~900ms (R192...-ae-64-48-48 - almost the same it time ~ 860 ms)
 
 R224-AE64-48-48-12-BW_SAEHDBW x f liae-ud ~ 1500-1600ms
@@ -42,8 +46,8 @@ R192-AE64-48-48-16-LIAE-UD-SAEHDBW-PRETR_SAEHDBW  -- 269 M
 liae-ud-r96-64-64-22_SAEHDBW -- 313 M
 R224-AE64-48-48-12-BW_SAEHDBW -- 297 M  (12 is == 16)
 
-liae-ud-r96-24-24-12_SAEHDBW -- 45.6 M
-liae-ud-r96-32-32-12-bw_SAEHDBW -- 96 M
+liae-ud-r96-24-24-12_SAEHDBW -- 45.6 M (12 is == 16)
+liae-ud-r96-32-32-12-bw_SAEHDBW -- 96 M (12 is == 16)
 
 LIAE-UDT-R128-96-32-32-16_SAEHDBW -- 209 M  B: 4,6,8 (B=8: it= 444-463 ms (530, Lower power mode) --> ~4K@4, 13K@6 --> 8), 4.5.2022 --> train at f (also do on mf)
 
