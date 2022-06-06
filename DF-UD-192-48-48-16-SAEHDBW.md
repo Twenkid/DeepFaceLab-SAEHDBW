@@ -2,6 +2,21 @@
 
 ### Training  ... 5.2022;  --> 6.2022...
 
+**299K**
+
+![image](https://user-images.githubusercontent.com/23367640/172078272-c7b242fe-c598-4256-9e9a-10ecd00b759d.png)
+![image](https://user-images.githubusercontent.com/23367640/172078291-e90b45ea-e507-4c9f-961d-2691c587af1a.png)
+![image](https://user-images.githubusercontent.com/23367640/172078325-68e9112d-6294-482f-ae3d-592d16188d85.png)
+![image](https://user-images.githubusercontent.com/23367640/172078332-41636967-39d3-4f29-a877-0969e2b11b38.png)
+
+![image](https://user-images.githubusercontent.com/23367640/172078376-f549e681-8d17-47ec-b4ac-c274702c88ec.png)
+![image](https://user-images.githubusercontent.com/23367640/172078412-2915edad-56e7-462c-9067-1134f1825bf2.png)
+
+![image](https://user-images.githubusercontent.com/23367640/172078478-5ce0bf10-eb5e-4d1f-8977-c98301fa4955.png)
+![image](https://user-images.githubusercontent.com/23367640/172078511-747b4ec8-4a3d-432e-a6f6-b1ab7d39f1b7.png)
+![image](https://user-images.githubusercontent.com/23367640/172078576-07251ed7-5a7f-45fe-91a3-1ed696db15d7.png)
+
+
 **249K**
 
 ![image](https://user-images.githubusercontent.com/23367640/172017726-60547770-76f4-43d8-ab3b-f3e6ac3a811d.png)
