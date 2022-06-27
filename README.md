@@ -2,6 +2,44 @@
 
 ## Notes, experience, tools, deepfakes
 
+22.6.2022
+
+Premiere! 
+
+![image](https://user-images.githubusercontent.com/23367640/175982252-3d79a921-6261-4fc3-ad56-8737b812b955.png)
+
+https://artificial-mind.blogspot.com/2022/06/arnold-schwarzenegger-governor-of.html
+
+https://www.youtube.com/watch?v=n2JMGqxOYfA&feature=youtu.be
+
+Created with DFL-SAEHDBW, df-udt, 192x192, 128x48x32x16
+
+![image](https://user-images.githubusercontent.com/23367640/175983477-be704259-ae9b-41ec-a245-7ea30af6c516.png)
+![image](https://user-images.githubusercontent.com/23367640/175982952-7023736a-914a-499b-86a1-9d2f7af288f8.png)
+![image](https://user-images.githubusercontent.com/23367640/175983001-12bd3314-6119-4923-a7f3-e63707bb7427.png)
+![image](https://user-images.githubusercontent.com/23367640/175983018-84743e1a-b982-4af9-bbad-2401ee0f807d.png)
+![image](https://user-images.githubusercontent.com/23367640/175987234-d86a200d-3c7b-4090-a7a8-60ffb51f38a0.png)
+
+![image](https://user-images.githubusercontent.com/23367640/175983039-a3e2296d-5493-4e78-a3d3-a4700137b3d9.png)
+![image](https://user-images.githubusercontent.com/23367640/175983775-d8f1ae00-16d0-497f-817f-68ed7dc51204.png)
+
+![image](https://user-images.githubusercontent.com/23367640/175986539-bec8c060-828d-41d1-8b5f-a81695213b89.png)
+![image](https://user-images.githubusercontent.com/23367640/175986660-bdf0e5d9-59e7-4e02-a94c-8a0c7f83bc19.png)
+![image](https://user-images.githubusercontent.com/23367640/175986694-9381ce87-d665-4f99-93aa-d034b741b278.png)
+![image](https://user-images.githubusercontent.com/23367640/175986726-dcbfcc39-5fab-4ae9-925b-ce3e0dbbd04b.png)
+
+![image](https://user-images.githubusercontent.com/23367640/175986888-d93e7375-a72d-4495-8785-b57870e136cb.png)
+
+![image](https://user-images.githubusercontent.com/23367640/175986915-936591e3-d475-43fe-9ed6-5bc430a327f2.png)
+![image](https://user-images.githubusercontent.com/23367640/175986932-e986253e-d097-4aff-896e-9cdf9c8fe8b3.png)
+![image](https://user-images.githubusercontent.com/23367640/175988080-7b3e5548-cb7f-4a98-aa7a-ee6c6a2c3468.png)
+![image](https://user-images.githubusercontent.com/23367640/175988169-73bf598e-d4b4-43c3-a98a-52df5064772a.png)
+![image](https://user-images.githubusercontent.com/23367640/175988245-beea2707-f405-4172-8f41-72e2892cf673.png)
+
+
+![image](https://user-images.githubusercontent.com/23367640/175986966-da5f810e-396b-4829-b4e3-d981d3d2d74c.png)
+
+
 ~ 22.4.2022 -- Minor iterface changes (more keys for save, save preview periods and auto saving;later: possible forcing generation of new previews instead of keeping the same for the whole training etc.; reviewing the code
 
 ~ 25.4.2022? --> Started working on SAEHDBW - Grayscale deepfake model; research, experiments, modifications of the channel dimensions, studying the NN model.
