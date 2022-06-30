@@ -12,7 +12,7 @@ https://artificial-mind.blogspot.com/2022/06/arnold-schwarzenegger-governor-of.h
 
 https://www.youtube.com/watch?v=n2JMGqxOYfA&feature=youtu.be
 
-Created with DFL-SAEHDBW, df-udt, 192x192, 128x48x32x16
+Created with DFL-SAEHDBW, df-udt, 192x192, 128x48x32x16. Trained on a Geforce 750 Ti 2 GB on Windows 10.
 
 ![image](https://user-images.githubusercontent.com/23367640/175983477-be704259-ae9b-41ec-a245-7ea30af6c516.png)
 
