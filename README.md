@@ -2,6 +2,11 @@
 
 ## Notes, experience, tools, deepfakes
 
+### Manual
+
+<a href="https://github.com/Twenkid/DeepFaceLab-SAEHDBW/blob/main/Manual.md">https://github.com/Twenkid/DeepFaceLab-SAEHDBW/blob/main/Manual.md</a>
+
+
 22.6.2022
 
 Premiere! 
@@ -29,8 +34,6 @@ Created with DFL-SAEHDBW, df-udt, 192x192, 128x48x32x16. Trained on a Geforce 75
 ![image](https://user-images.githubusercontent.com/23367640/175986888-d93e7375-a72d-4495-8785-b57870e136cb.png)
 
 ![image](https://user-images.githubusercontent.com/23367640/175986915-936591e3-d475-43fe-9ed6-5bc430a327f2.png)
-
-
 
 
 
