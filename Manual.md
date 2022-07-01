@@ -25,11 +25,6 @@ https://artificial-mind.blogspot.com/2022/06/arnold-schwarzenegger-governor-of.h
 https://www.youtube.com/watch?v=n2JMGqxOYfA
 
 <img src="https://user-images.githubusercontent.com/23367640/175982252-3d79a921-6261-4fc3-ad56-8737b812b955.png">
-<img src="https://user-images.githubusercontent.com/23367640/175983477-be704259-ae9b-41ec-a245-7ea30af6c516.png">
-<img src="https://user-images.githubusercontent.com/23367640/175983001-12bd3314-6119-4923-a7f3-e63707bb7427.png">
-<img src="https://user-images.githubusercontent.com/23367640/175983775-d8f1ae00-16d0-497f-817f-68ed7dc51204.png">
-<img src="https://user-images.githubusercontent.com/23367640/175986539-bec8c060-828d-41d1-8b5f-a81695213b89.png">
-
 
 Note that the model for the movie is trained on just a Geforce 750 Ti on Windows 10. It uses DF-UDT 192-128-48-32-16. Windows  allows allocation of only up to 1.45 GB out of 2 GB and this model is smaller even than that. Usual batch size: 6 in GPU.
 
@@ -172,3 +167,9 @@ However the work-around is only for one CUDA card and accesses only the 0-th ele
 22.4.2022 - 2x.5.2022 + a bit 6.2022
 
 Release: 1.7.2022
+
+<img src="https://user-images.githubusercontent.com/23367640/175983477-be704259-ae9b-41ec-a245-7ea30af6c516.png">
+<img src="https://user-images.githubusercontent.com/23367640/175983001-12bd3314-6119-4923-a7f3-e63707bb7427.png">
+<img src="https://user-images.githubusercontent.com/23367640/175983775-d8f1ae00-16d0-497f-817f-68ed7dc51204.png">
+<img src="https://user-images.githubusercontent.com/23367640/175986539-bec8c060-828d-41d1-8b5f-a81695213b89.png">
+
