@@ -17,7 +17,6 @@ https://artificial-mind.blogspot.com/2022/06/arnold-schwarzenegger-governor-of.h
 
 https://www.youtube.com/watch?v=n2JMGqxOYfA&feature=youtu.be
 
-The model was trained on a Geforce 750 Ti 2 GB on Windows 10, created with DFL-SAEHDBW, df-udt mf 192x192 128x48x32x16, mostly batch size=6, no color transfer. Initially ~500K iterations pre-training on a customized version of the DFL faceset - I gradually removed "bad" samples with overlapped objects etc, in the end it was about 14551 items, instead of 15843. Then on the two-faces training, after 500K-some iterations, I turned on SOT-M color transfer for 10Ks iterations. Merging was on different steps; some fine-tuning experiments for a few sequences which were introduced late (the BTA ones, one other, from which only afew seconds were used - it mostly added more contrast in the teeth, darker separation, but it changed the position of the eyes etc. a bit).
 
 ![image](https://user-images.githubusercontent.com/23367640/175983477-be704259-ae9b-41ec-a245-7ea30af6c516.png)
 
@@ -36,12 +35,22 @@ The model was trained on a Geforce 750 Ti 2 GB on Windows 10, created with DFL-S
 ![image](https://user-images.githubusercontent.com/23367640/175986915-936591e3-d475-43fe-9ed6-5bc430a327f2.png)
 
 
+# Technical details
+
+* The model was trained on a Geforce 750 Ti 2 GB on Windows 10, created with DFL-SAEHDBW, df-udt mf 192x192 128x48x32x16, mostly batch size=6. Initially ~494K iterations pre-training, no color transfer (it wasn't adapted yet) on a customized version of the DFL faceset: I gradually removed "bad" samples with overlapped objects etc, in the end it was about 14551 items, instead of 15843*. I didn't turn off Random warp and no LRD. The pretrained model probably could improve more, but I wanted to switch to the actual faces*. 
+
+* Then on the two-faces training, after 509K iterations, I turned on LRD (learning rate drop-out) and SOT-M color transfer for 10Ks iterations - SOT is slow, but it improved the loss with a few iterations. Some fine-tuning experiments for a few sequences which were introduced late (the BTA ones), or had too noticeable "flashes" in the face (the "parliament"-stamps wall), also the sequences from the interview which starts after the first part of the movie when the music ends with the EU star flag (an attempt to improve the borders in semi-profile views); only a few seconds were used from the latter, mostly because I noticed a better matching  sequence, rather than due to much improved quality - the latter finetuning mostly added more contrast in the teeth, darker separation regions, but it changed the position of the eyes etc. and also the borders of the face).
+
+![image](https://user-images.githubusercontent.com/23367640/176976685-63660241-8ea2-4ee8-967f-749bb2ec72b8.png)
+
+* Future work: In future pretrainings I may reduce the faceset more and may split it to different types of faces and remove more of the "bad" samples in order to pretrain the model faster."Bad" are e.g. beard and moustache, old faces with deep wrinkles - they all are not reconstructed well anyway at least with the dimension I've tried so far.
+
+* Note that the model had a natural "mask" on his face, reaching about the upper end of the mf-area, and when the model renders it darker - it actually is not a mistake and bad color transfer, LOL.
+
 ## Kiril to Arnold
 
-
 ![image](https://user-images.githubusercontent.com/23367640/176973091-7a392058-24fa-4383-8557-459e7b428706.png)
-![image](https://user-images.githubusercontent.com/23367640/176974508-139d02e3-7445-4f8d-897f-ded57d1b288e.png)
-![image](https://user-images.githubusercontent.com/23367640/176974539-620c2918-679d-43b6-8c06-cd76806923a6.png)
+
 ![image](https://user-images.githubusercontent.com/23367640/176974624-d7fb89ef-4ee2-4025-9d95-2caee2f220fe.png)
 ![image](https://user-images.githubusercontent.com/23367640/176974687-05d48e92-3800-42ab-8b6d-200c263a0d72.png)
 
@@ -51,7 +60,8 @@ The model was trained on a Geforce 750 Ti 2 GB on Windows 10, created with DFL-S
 
 ~ 25.4.2022? --> Started working on SAEHDBW - Grayscale deepfake model; research, experiments, modifications of the channel dimensions, studying the NN model.
 
-## Goals of the project:
+# Goals of the project:
+
 * Allow training of more "respectable" resolution models even on 2 GB GPUs, GeForce 750 Ti in particular, and on integrated GPUs
 * Achieve several times? higher performance: either smaller models, higher resolution and/or more detailed models, although grayscale. 
 * Study the code, if possible modify the architectures and optimize more: simplify/reduce the depth of some networks to check if they would achieve similar quality due to the single channel with improved performance. 
