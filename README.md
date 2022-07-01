@@ -17,7 +17,7 @@ https://artificial-mind.blogspot.com/2022/06/arnold-schwarzenegger-governor-of.h
 
 https://www.youtube.com/watch?v=n2JMGqxOYfA&feature=youtu.be
 
-Created with DFL-SAEHDBW, df-udt, 192x192, 128x48x32x16. Trained on a Geforce 750 Ti 2 GB on Windows 10.
+The model was trained on a Geforce 750 Ti 2 GB on Windows 10, created with DFL-SAEHDBW, df-udt mf 192x192 128x48x32x16, mostly batch size=6, no color transfer. Initially ~500K iterations pre-training on a customized version of the DFL faceset - I gradually removed "bad" samples with overlapped objects etc, in the end it was about 14551 items, instead of 15843. Then on the two-faces training, after 500K-some iterations, I turned on SOT-M color transfer for 10Ks iterations. Merging was on different steps; some fine-tuning experiments for a few sequences which were introduced late (the BTA ones, one other, from which only afew seconds were used - it mostly added more contrast in the teeth, darker separation, but it changed the position of the eyes etc. a bit).
 
 ![image](https://user-images.githubusercontent.com/23367640/175983477-be704259-ae9b-41ec-a245-7ea30af6c516.png)
 
@@ -36,8 +36,16 @@ Created with DFL-SAEHDBW, df-udt, 192x192, 128x48x32x16. Trained on a Geforce 75
 ![image](https://user-images.githubusercontent.com/23367640/175986915-936591e3-d475-43fe-9ed6-5bc430a327f2.png)
 
 
+## Kiril to Arnold
 
 
+![image](https://user-images.githubusercontent.com/23367640/176973091-7a392058-24fa-4383-8557-459e7b428706.png)
+![image](https://user-images.githubusercontent.com/23367640/176974508-139d02e3-7445-4f8d-897f-ded57d1b288e.png)
+![image](https://user-images.githubusercontent.com/23367640/176974539-620c2918-679d-43b6-8c06-cd76806923a6.png)
+![image](https://user-images.githubusercontent.com/23367640/176974624-d7fb89ef-4ee2-4025-9d95-2caee2f220fe.png)
+![image](https://user-images.githubusercontent.com/23367640/176974687-05d48e92-3800-42ab-8b6d-200c263a0d72.png)
+
+# History
 
 ~ 22.4.2022 -- Minor iterface changes (more keys for save, save preview periods and auto saving;later: possible forcing generation of new previews instead of keeping the same for the whole training etc.; reviewing the code
 
