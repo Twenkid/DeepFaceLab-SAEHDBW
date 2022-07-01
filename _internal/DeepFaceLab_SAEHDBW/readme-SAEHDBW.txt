@@ -33,14 +33,29 @@ https://github.com/iperov/DeepFaceLab
 
 https://disk.yandex.ru/d/7i5XTKIKVg5UUg/DeepFaceLab
 
-2) Save SAEHDBW source files in a new directory in "_internal:"
+2) Copy the content of the folder (C:\DFL\... is where you have installed the library)
 
-E.g.
+C:\DFL\DeepFaceLab_NVIDIA_up_to_RTX2080Ti\_internal\DeepFaceLab
 
-C:\DFL\DeepFaceLab_NVIDIA_up_to_RTX2080Ti\_internal\
+to a new folder:
 
 C:\DFL\DeepFaceLab_NVIDIA_up_to_RTX2080Ti\_internal\DeepFaceLab_SAEHDBW\
 
+3) Save SAEHDBW source files in that new directory:
+
+C:\DFL\DeepFaceLab_NVIDIA_up_to_RTX2080Ti\_internal\DeepFaceLab_SAEHDBW\
+
+Confirm the overwrite of of the modified files.
+
+4) Copy the sample .bat files to the root folder of DFL2:
+
+C:\DFL\DeepFaceLab_NVIDIA_up_to_RTX2080Ti\
+
+
+Before invoking them, edit the content with the proper paths!
+
+
+...
 
 Note that the original code from the installation is in:
 
