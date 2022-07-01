@@ -37,30 +37,66 @@ I pretrained also DF-UD 192-128-48-48-16 - expecting possibly higher quality res
 
 ## INSTALLATION
 
+
 1) Install DFL 2.0 build (either CUDA or DIRECTX12 version): 
 
 https://github.com/iperov/DeepFaceLab
 
 https://disk.yandex.ru/d/7i5XTKIKVg5UUg/DeepFaceLab
 
-2) Save SAEHDBW source files in a new directory in "_internal:"
-
-E.g.
 ```
-C:\DFL\DeepFaceLab_NVIDIA_up_to_RTX2080Ti\_internal\
+2) Copy the content of the folder (C:\DFL\... is where you have installed the library)
+
+C:\DFL\DeepFaceLab_NVIDIA_up_to_RTX2080Ti\_internal\DeepFaceLab
+
+to a new folder:
 
 C:\DFL\DeepFaceLab_NVIDIA_up_to_RTX2080Ti\_internal\DeepFaceLab_SAEHDBW\
+
+3) Save SAEHDBW source files in that new directory:
+
+C:\DFL\DeepFaceLab_NVIDIA_up_to_RTX2080Ti\_internal\DeepFaceLab_SAEHDBW\
+
+Confirm the overwrite of of the modified files.
+
+4) Copy the sample .bat files to the root folder of DFL2:
+
+From:
+
+https://github.com/Twenkid/DeepFaceLab-SAEHDBW/tree/main/DeepFaceLab_DirectX12
+
+https://github.com/Twenkid/DeepFaceLab-SAEHDBW/tree/main/DeepFaceLab_NVIDIA_up_to_RTX2080Ti
 ```
 
+```
+4.2)-RESIZE-Kiril-15-6-2022-BTA-resize.bat
+6)Train-192-SAEHDBW-BW-DF-UD-INPUT-PRETRAIN-x192-resized-from-x384--T-DF-UD-3-6-2022-force-GPU.bat
+7-MERGE_TEST-CUDA-28-6-2022-SOT-MORE-SAEHDBW-Kiril-Arnold.bat
+```
+
+etc.
+
+To:
+```
+C:\DFL\DeepFaceLab_NVIDIA_up_to_RTX2080Ti\
+or the respective DirectX12-build folder
+```
+Before invoking them, edit the content with the proper paths!
+
+Note that the CUDA and the DirectX12 versions have minor differences in one setting - the CUDA version has optional parameters for avoiding the CUDA-device-listing bug, which is not needed for the DirectX version.
+
+The DirectX build was about 30% slower than the CUDA version, however even if you have NVIDIA card it is nice to have both, because you can use the DirectX build with an APU or built-in GPU for example to merge, while the main GPU is training, or even to train another model with the modern powerful APUs.
+
 Note that the original code from the installation is in:
-
+```
 C:\DFL\DeepFaceLab_NVIDIA_up_to_RTX2080Ti\_internal\DeepFaceLab\
-
+```
 The SAEHDBW is in a parallel directory in order to keep both for reference and in case there are problems with SAEHDBW.
 
 You may copy also the setenv.bat which has a line added for the path to the SAEHDBW version:
+```
 SET DFL_ROOT_SAEHDBW=%INTERNAL%\DeepFaceLab_SAEHDBW
-
+```
 And then use that varibale in the scripts (see examples)
 
 This line can be added manually to the individual batch scripts also, or you may change the main variable:
