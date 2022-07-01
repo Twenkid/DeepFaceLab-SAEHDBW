@@ -49,11 +49,28 @@ Confirm the overwrite of of the modified files.
 
 4) Copy the sample .bat files to the root folder of DFL2:
 
+From:
+https://github.com/Twenkid/DeepFaceLab-SAEHDBW/tree/main/DeepFaceLab_DirectX12
+https://github.com/Twenkid/DeepFaceLab-SAEHDBW/tree/main/DeepFaceLab_NVIDIA_up_to_RTX2080Ti
+
+```
+4.2)-RESIZE-Kiril-15-6-2022-BTA-resize.bat
+6)Train-192-SAEHDBW-BW-DF-UD-INPUT-PRETRAIN-x192-resized-from-x384--T-DF-UD-3-6-2022-force-GPU.bat
+7-MERGE_TEST-CUDA-28-6-2022-SOT-MORE-SAEHDBW-Kiril-Arnold.bat
+```
+
+etc.
+
+To:
+```
 C:\DFL\DeepFaceLab_NVIDIA_up_to_RTX2080Ti\
-
-
+or the respective DirectX12-build folder
+```
 Before invoking them, edit the content with the proper paths!
 
+Note that the CUDA and the DirectX12 versions have some differences - the CUDA version has some parameters for avoiding one CUDA-device-listing bug, which is not needed for the DirectX version.
+
+The DirectX build was about 30% slower than the CUDA version, however even if you have NVIDIA card it is nice to have both, because you can use the DirectX build with an APU or built-in GPU for example to merge, while the main GPU is training, or even to train another model with the modern powerful APUs.
 
 ...
 
