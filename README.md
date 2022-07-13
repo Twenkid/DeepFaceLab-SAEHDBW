@@ -17,10 +17,17 @@ https://artificial-mind.blogspot.com/2022/06/arnold-schwarzenegger-governor-of.h
 
 https://www.youtube.com/watch?v=n2JMGqxOYfA&feature=youtu.be
 
+Second film: **"Arnold meets his illegal daughter Lena Borislavova Scwarzenegger"**
+
+![image](https://user-images.githubusercontent.com/23367640/178838680-44e7398c-a0b4-4548-9c82-9a2d3430886c.png)
+
+https://youtu.be/k1MZ8eIUjXE
+
 
 ![image](https://user-images.githubusercontent.com/23367640/175983477-be704259-ae9b-41ec-a245-7ea30af6c516.png)
 
 ![image](https://user-images.githubusercontent.com/23367640/175983001-12bd3314-6119-4923-a7f3-e63707bb7427.png)
+
 
 
 ![image](https://user-images.githubusercontent.com/23367640/175983775-d8f1ae00-16d0-497f-817f-68ed7dc51204.png)
