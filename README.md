@@ -9,6 +9,7 @@
 
 22.6.2022
 
+
 Premiere! 
 
 ![image](https://user-images.githubusercontent.com/23367640/175982252-3d79a921-6261-4fc3-ad56-8737b812b955.png)
@@ -17,16 +18,20 @@ https://artificial-mind.blogspot.com/2022/06/arnold-schwarzenegger-governor-of.h
 
 https://www.youtube.com/watch?v=n2JMGqxOYfA&feature=youtu.be
 
-* Part II: **"Arnold meets his illegal daughter Lena Borislavova Scwarzenegger"** https://youtu.be/k1MZ8eIUjXE
+* **Part II**: **"Arnold meets his illegal daughter Lena Borislavova Scwarzenegger"** https://youtu.be/k1MZ8eIUjXE
 
 ![image](https://user-images.githubusercontent.com/23367640/178838680-44e7398c-a0b4-4548-9c82-9a2d3430886c.png)
 
 
-* Part III: Combined with Wav2Lip - the mouth is synchronized; no finetuning; another pass of DFL to repair the artifacts (however there is some loss of contrast and sharpness)
-https://youtu.be/4F7PB7wBEXk
+* **Part III**: Combined with Wav2Lip - the mouth is synchronized; no finetuning; another pass of DFL to repair the artifacts (however there is some loss of contrast and sharpness)  https://youtu.be/4F7PB7wBEXk
+
 ![image](https://user-images.githubusercontent.com/23367640/179422086-2af2a887-4681-4f58-a68f-d16f4f6a04df.png)
 
 
+
+* **Part IV**: Lip-syncing with finetuning repair and synthesized cloned voices (RealTimeVoiceCloning) over original script ("full directing") with Arnold, Lena Schwarzenegger and Stoltenberg    https://youtu.be/X56QkNzkkVM
+
+![title-4-color-NATO-Arnold-reacts-to-Stoltenberg](https://user-images.githubusercontent.com/23367640/183316946-3787e880-a647-423d-b6f8-2078a514642e.jpg)
 
 
 ![image](https://user-images.githubusercontent.com/23367640/175983477-be704259-ae9b-41ec-a245-7ea30af6c516.png)
