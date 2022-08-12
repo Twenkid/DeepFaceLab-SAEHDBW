@@ -6,9 +6,16 @@
 
 <a href="https://github.com/Twenkid/DeepFaceLab-SAEHDBW/blob/main/Manual.md">https://github.com/Twenkid/DeepFaceLab-SAEHDBW/blob/main/Manual.md</a>
 
+Latest news:
+
+* ~ 11.8.2022: Experimental feature: POC version of the colorization of the output from the grayscale models during merging with additionally trained dedicated pix2pix GAN: complete prototype and merging about 10-11.8.2022. More info and results - later (due to a loss of some data in RAM disks, LOL, which I will reproduce again)
+
+* Future work: Integration with Wav2Lip and Wav2Lip-HQ for automated lip-sync and repair of the output from the lip-sync libraries. 
+
+* Future work: Possibly integration with RealTimeVoiceCloning? etc./other TTS engines etc.
+
 
 22.6.2022
-
 
 Premiere! 
 
@@ -32,6 +39,7 @@ https://www.youtube.com/watch?v=n2JMGqxOYfA&feature=youtu.be
 * **Part IV**: Lip-syncing with finetuning repair and synthesized cloned voices (RealTimeVoiceCloning) over original script ("full directing") with Arnold, Lena Schwarzenegger and Stoltenberg    https://youtu.be/X56QkNzkkVM
 
 ![title-4-color-NATO-Arnold-reacts-to-Stoltenberg](https://user-images.githubusercontent.com/23367640/183316946-3787e880-a647-423d-b6f8-2078a514642e.jpg)
+
 
 
 ![image](https://user-images.githubusercontent.com/23367640/175983477-be704259-ae9b-41ec-a245-7ea30af6c516.png)
