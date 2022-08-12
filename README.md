@@ -8,7 +8,7 @@
 
 Latest news:
 
-* ~ 11.8.2022: Experimental feature: POC version of the colorization of the output from the grayscale models during merging with additionally trained dedicated pix2pix GAN: complete prototype and merging about 10-11.8.2022. More info and results - later (due to a loss of some data in RAM disks, LOL, which I will reproduce again)
+* ~ 10.8.2022: Experimental feature: POC version of the colorization of the output from the grayscale models during merging with additionally trained dedicated pix2pix GAN: complete prototype and merging on 10.8.2022. More info and results - later (due to a loss of some data in RAM disks, LOL, it will need a reproduction)
 
 * Future work: Integration with Wav2Lip and Wav2Lip-HQ for automated lip-sync and repair of the output from the lip-sync libraries. 
 
