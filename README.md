@@ -1,6 +1,8 @@
-# DeepFaceLab - New Grayscale SAEHDBW Model and Code Review / Documentation of the source files
+# DeepFaceLab-SAEHDBW - New Grayscale SAEHDBW Model for higher performance, Colorization of the result, Integration with Wav2Lip etc. and Code Review / Documentation of the source files
 
 ## Notes, experience, tools, deepfakes
+
+Some of the points are goals, TBD.
 
 ### Manual
 
@@ -8,7 +10,11 @@
 
 Latest news:
 
-* ~ 10.8.2022: Experimental feature: POC version of the colorization of the output from the grayscale models during merging with additionally trained dedicated pix2pix GAN: complete prototype and merging on 10.8.2022. More info and results - later (due to a loss of some data in RAM disks, LOL, it will need a reproduction)
+* ~ 10.8.2022: Experimental feature: POC version of the colorization of the output from the grayscale models during merging with additionally trained dedicated pix2pix GAN: complete prototype and merging on 10.8.2022.
+
+![image](https://user-images.githubusercontent.com/23367640/184554576-1c308792-bf3d-497a-8061-7de10a9ae5a2.png)
+
+ More info, results and code - later.
 
 * Future work: Integration with Wav2Lip and Wav2Lip-HQ for automated lip-sync and repair of the output from the lip-sync libraries. 
 
