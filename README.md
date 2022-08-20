@@ -14,7 +14,22 @@ Latest news:
 
 ![image](https://user-images.githubusercontent.com/23367640/184554576-1c308792-bf3d-497a-8061-7de10a9ae5a2.png)
 
- More info, results and code - later.
+* 19.8-20.8.2022: After investigation of the properties of the colorized faces, debugging of the merging, there was a successful application of an idea for stabilization of the colorized output and merging with precomputed faces (for other usages as well, e.g. prerendered 3D-models or synchronously performing faces etc.). In the video example below the output is also sharpened after merging (whole frame) - it needs to be per face only etc. or to have some antialiasing eventually.
+
+See a merged and sharpened segment with Jens, whole frame: http://twenkid.com/v/32-stolten-color-20-8-20220.645217694677918.mp4
+
+**Only aligned faces:**
+
+The raw colorized face with pix2pix model without color stabilization was flickering; it was very bad, but still noticeable, especially in some moments.
+https://user-images.githubusercontent.com/23367640/185765054-c012ba01-8600-4b78-9a45-3f01270237e4.mp4
+
+After color-gamma stabilization, that artifact was gone (only the aligned face, 146 KB):
+https://user-images.githubusercontent.com/23367640/185765072-bc8be151-3e7f-4758-8f5d-5d4a8f8255f9.mp4
+
+The color-gamma stabilization is done by first probe-rendering all faces, computing their total pixel weight per frame and the average of all frames, then adjusting the gamma for each frame according to the average in order to flatten the fluctuations: if the face is too dark - it gets lighter and vice versa. Then merging is performed using these corrected faces. 
+
+
+More info, results and code - later.
 
 * Future work: Integration with Wav2Lip and Wav2Lip-HQ for automated lip-sync and repair of the output from the lip-sync libraries. 
 
