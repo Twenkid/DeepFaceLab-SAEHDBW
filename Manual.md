@@ -162,6 +162,120 @@ If using the CUDA version, a function that checks for CUDA devices didn't return
 
 However the work-around is only for one CUDA card and accesses only the 0-th element, if you have many cards more items have to be added to the list.
 
+* CUDA path and skip ...
+
+Another fix in my fork which may need to be adjusted if you clone it is the following (not tested on other installations):
+
+```
+device.py
+C:\DFL\DeepFaceLab_NVIDIA_up_to_RTX2080Ti\_internal\DeepFaceLab_SAEHDBW_22_5_2022\core\leras\device.py
+```
+
+https://github.com/Twenkid/DeepFaceLab-SAEHDBW/blob/main/_internal/DeepFaceLab_SAEHDBW/core/leras/device.py
+
+```python
+(...)
+skip_physical_devices = False # True #10-5-2022 - fix CUDA tf issue - for the CUDA build
+
+force_gpu_data = "force_gpu_data" in os.environ #16-5-2022
+max_gpu_memory = 1556925644
+forced_gpu_id = "Unknown CUDA GPU"
+print(f"core\leras\device.py: force_gpu_data={force_gpu_data}") #3-8-2022
+# fixed a missed assignment: physical_devices = device_lib.list_local_devices()
+# in if not skip_physical_devices: ..
+(...)
+
+  @staticmethod
+    def _get_tf_devices_proc(q : multiprocessing.Queue):
+        print("_get_tf_devices_proc")
+        print(sys.platform[0:3])
+        os.environ['CUDA_PATH'] = r"C:\DFL\DeepFaceLab_NVIDIA_up_to_RTX2080Ti\_internal\CUDA"  #SET TO YOUR INSTALLATION or install in C:\DFL\
+        s = os.environ['CUDA_PATH']
+        print(f"os.environ['CUDA_PATH']={s}")
+        #os.environ['CUDA_PATH'] = r"C:\DFL\DeepFaceLab_NVIDIA_up_to_RTX2080Ti\_internal\CUDA"
+        s = os.environ['CUDA_PATH']
+        print(f"Reset CUDA_PATH=os.environ[CUDA_PATH]={s}")
+        if sys.platform[0:3] == 'win':
+            compute_cache_path = Path(os.environ['APPDATA']) / 'NVIDIA' / ('ComputeCache_ALL')
+            os.environ['CUDA_CACHE_PATH'] = str(compute_cache_path)
+            print("CUDA_CACHE_PATH={os.environ['CUDA_CACHE_PATH']}")
+            
+            if not compute_cache_path.exists():
+                io.log_info("Caching GPU kernels...")
+                compute_cache_path.mkdir(parents=True, exist_ok=True)
+                
+        import tensorflow
+        
+        tf_version = tensorflow.version.VERSION
+        print(f"tf_version={tf_version}")
+        #if tf_version is None:
+        #    tf_version = tensorflow.version.GIT_VERSION
+        if tf_version[0] == 'v':
+            tf_version = tf_version[1:]
+        if tf_version[0] == '2':
+            tf = tensorflow.compat.v1
+        else:
+            tf = tensorflow
+                    
+        import logging
+        # Disable tensorflow warnings
+        tf_logger = logging.getLogger('tensorflow')
+        tf_logger.setLevel(logging.ERROR)
+
+        from tensorflow.python.client import device_lib
+        print("AFTER: from tensorflow.python.client import device_lib")
+        devices = []
+        #print(f"tf.config.list_physical_devices()={tensorflow.python.client.device_lib.list_physical_devices()}")
+                
+        #physical_devices = device_lib.list_local_devices()
+        physical_devices_f = {}
+        if not skip_physical_devices:
+          print(f"list_local_devices()={device_lib.list_local_devices()}")
+        else:        
+            #2147483648
+            #max_memory = 1556925644 #212000000 #1900000000 #1556925644
+            #max_gpu_memory = 1556925644 #212000000 #1900000000 #1556925644
+            print("skip_physical_devices and force values")
+            physical_devices_f = {}
+            #physical_devices_f[0] = ('GPU', '750 Ti', max_memory) #1556925644) #1000000000)
+            physical_devices_f[0] = ('GPU', forced_gpu_id, max_gpu_memory) #1556925644) #1000000000)  #This is set from the environment variables, see examples
+            print(physical_devices_f)
+            q.put(physical_devices_f)
+            time.sleep(0.1)
+        
+        if not skip_physical_devices:         
+            for dev in physical_devices:
+                dev_type = dev.device_type
+                dev_tf_name = dev.name
+                dev_tf_name = dev_tf_name[ dev_tf_name.index(dev_type) : ]
+                
+                dev_idx = int(dev_tf_name.split(':')[-1])
+                
+                if dev_type in ['GPU','DML']:
+                    dev_name = dev_tf_name
+                    
+                    dev_desc = dev.physical_device_desc
+                    if len(dev_desc) != 0:
+                        if dev_desc[0] == '{':
+                            dev_desc_json = json.loads(dev_desc)
+                            dev_desc_json_name = dev_desc_json.get('name',None)
+                            if dev_desc_json_name is not None:
+                                dev_name = dev_desc_json_name
+                        else:
+                            for param, value in ( v.split(':') for v in dev_desc.split(',') ):
+                                param = param.strip()
+                                value = value.strip()
+                                if param == 'name':
+                                    dev_name = value
+                                    break
+                    
+                    physical_devices_f[dev_idx] = (dev_type, dev_name, dev.memory_limit)
+                            
+            q.put(physical_devices_f)
+            time.sleep(0.1)
+```        
+
+
 ### Version:
 
 22.4.2022 - 2x.5.2022 + a bit 6.2022
