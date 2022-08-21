@@ -26,7 +26,7 @@ https://user-images.githubusercontent.com/23367640/185765054-c012ba01-8600-4b78-
 After color-gamma stabilization, that artifact was gone (only the aligned face, 146 KB):
 https://user-images.githubusercontent.com/23367640/185765072-bc8be151-3e7f-4758-8f5d-5d4a8f8255f9.mp4
 
-The color-gamma stabilization is done by first probe-rendering all faces, computing their total pixel weight per frame and the average of all frames, then adjusting the gamma for each frame according to the average in order to flatten the fluctuations: if the face is too dark - it gets lighter and vice versa (_Indeed, this phenomenon itself is to show some intrinsic properties of the pix2pix model._). Then merging is performed using these corrected faces. 
+The color-gamma stabilization is done by first probe-rendering all faces, computing their total pixel weight per frame and the average of all frames, then adjusting the gamma for each frame according to the average in order to flatten the fluctuations: if the face is too dark - it gets lighter and vice versa (_Indeed, this phenomenon itself is to show some intrinsic properties of the pix2pix model._). Finally there is sharpening and then merging is performed using the gamma-corrected faces. 
  
 
 
