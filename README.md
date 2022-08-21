@@ -1,4 +1,4 @@
-# DeepFaceLab-SAEHDBW - New Grayscale SAEHDBW Model for higher performance, Colorization of the result, Integration with Wav2Lip etc. and Code Review / Documentation of the source files
+# DeepFaceLab-SAEHDBW - New Grayscale SAEHDBW Model for higher performance, then Colorization of the result; Integration with Wav2Lip etc. and Code Review / Documentation of the source files (future work)
 
 ## Notes, experience, tools, deepfakes
 
