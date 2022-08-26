@@ -15,6 +15,7 @@ Latest news:
 1. **Arnoldator** or **Arnaudator** [ArnOdator - "Арнодейтъ"] or
 1.  **Arnaudatar** or **Arnoldatar** (the same pronounciation)
 1. All of the above
+1. **Arnoldify, Arnoldifier, ArnolDF [Arnol-D-F]**
 
 * ~ 10.8.2022: Experimental feature: POC version of the colorization of the output from the grayscale models during merging with additionally trained dedicated pix2pix GAN: complete prototype and merging on 10.8.2022.
 
