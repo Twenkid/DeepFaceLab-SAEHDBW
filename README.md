@@ -1,4 +1,7 @@
-# DeepFaceLab-SAEHDBW - New Grayscale SAEHDBW Model for higher performance, then Colorization of the result; Integration with Wav2Lip etc. and Code Review / Documentation of the source files (future work)
+# DeepFaceLab-SAEHDBW - or **Arnoldifier, ArnoldDF**
+## New Grayscale SAEHDBW Model for higher performance, then Colorization of the result; Integration with Wav2Lip etc. and Code Review / Documentation of the source files (future work)
+
+![image](https://user-images.githubusercontent.com/23367640/175982252-3d79a921-6261-4fc3-ad56-8737b812b955.png)
 
 ## Notes, experience, tools, deepfakes
 
@@ -10,12 +13,16 @@ Some of the points are goals, TBD.
 
 Latest news:
 
+* 2x/.8.2022
+
+* Training a DF-UD 192x192 128-48-48-16 model, Kiril to Arnold (pretrained earlier), now after 36K it. without flip dst and some changes in the dataset. I expected (hoped) the new model to train in less iterations than the previous that was DF-UDT 192x19, 128-48-32-16, because of the non-symmetric number of dimensions of the encoder and decoder, but for now it seems similar, and the dataset of the Kiril ("dst") is not exactly the same.
+
 * 26.8.2022: I'm considering a more pronouncable or/and "unique" name/alias (names/aliases) of the project. For now:
 1. Arnold-DFL or Arnaud-DFL or
 1. **Arnoldator** or **Arnaudator** [ArnOdator - "Арнодейтъ"] or
 1.  **Arnaudatar** or **Arnoldatar** (the same pronounciation)
 1. All of the above
-1. **Arnoldify, Arnoldifier, ArnolDF [Arnol-D-F]**
+1. **Arnoldify, Arnoldifier, ArnoldDF, ArnolDF? [Arnol-D-F]**
 
 * ~ 10.8.2022: Experimental feature: POC version of the colorization of the output from the grayscale models during merging with additionally trained dedicated pix2pix GAN: complete prototype and merging on 10.8.2022.
 
@@ -46,7 +53,7 @@ More info, results and code - later.
 
 22.6.2022
 
-Premiere! 
+**Premiere!  Part I**
 
 ![image](https://user-images.githubusercontent.com/23367640/175982252-3d79a921-6261-4fc3-ad56-8737b812b955.png)
 
