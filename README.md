@@ -13,7 +13,7 @@ Latest news:
 * 26.8.2022: I'm considering a more pronouncable or/and "unique" name/alias (names/aliases) of the project. For now:
 1. Arnold-DFL or Arnaud-DFL or
 1. **Arnoldator** or **Arnaudator** [ArnOdator - "Арнодейтъ"] or
-1.  **Arnaudatar** (the same pronounciation)
+1.  **Arnaudatar** or **Arnoldatar** (the same pronounciation)
 1. All of the above
 
 * ~ 10.8.2022: Experimental feature: POC version of the colorization of the output from the grayscale models during merging with additionally trained dedicated pix2pix GAN: complete prototype and merging on 10.8.2022.
