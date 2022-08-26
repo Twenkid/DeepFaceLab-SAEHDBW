@@ -10,6 +10,8 @@ Some of the points are goals, TBD.
 
 Latest news:
 
+* 26.8.2022: I'm considering a more pronouncable name/aliases of the project. For now: Arnold-DFL or Arnaud-DFL, or Arnoldator or Arnaudator [Arn'odater]
+
 * ~ 10.8.2022: Experimental feature: POC version of the colorization of the output from the grayscale models during merging with additionally trained dedicated pix2pix GAN: complete prototype and merging on 10.8.2022.
 
 ![image](https://user-images.githubusercontent.com/23367640/184554576-1c308792-bf3d-497a-8061-7de10a9ae5a2.png)
