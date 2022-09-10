@@ -15,19 +15,22 @@ Latest news:
 
 * x.9.2022 - Training DF-UD 256x256 128-32-32-16, 258 MB after 170K it.
 
-A discovery: it happened that the model trains well even with a batch size of 4 and just 32-32 dimensions. The iteration time is comparable to training the 192x192 models. Note that the dataset is not the best regarding sharpness, especially on the Kiril's side, and for now I've been training with the 192x192 faces of Kiril, some of which extracted from 640x360 videos and not sharpened/super-resolution enhanced.
+A discovery: it happened that the model trains well even with a batch size of 4 and just 32-32 dimensions. The iteration time is comparable to training the 192x192 models. Note that the dataset is not the best regarding sharpness, especially on the Kiril's side, and for now I've been training with the 192x192 faces of Kiril, many of which extracted from 640x360 videos or from 854x480, resized from 640x360, and not sharpened/super-resolution enhanced after that.
 
-Note that
+The size of the model is way below the maximum that I could fit in 750 Ti, so far: 345 MB, both 192x192 df and df-udt models, so 288x288 (or even 320x320?) could be possible.
 
-I don't know if the batch 4 will work on lower resolution.
+I don't know if the batch 4 and using just 32-32 dimension will work so well on lower resolution, when the features will be smallr - that's something to try.
 
 ![0173000](https://user-images.githubusercontent.com/23367640/189473177-8600e0ca-0c4c-4bea-8e9b-67657664eec4.jpg)
 Loss: [09:01:56][#172976][0745ms][0.8431][0.6401]
 
-Note 10.9: 
+* xx.8.2022 - Colorization of Arnold with the POC method with Pix2Pix (Image to image) translation
 
+The first attempts weren't good. For Stoltenberg it was reasonable that it would work, because it's in similar conditions, the Arnold dataset is extremely diverse and apparently colorization models should be trained per sequence, which is too much.
 
-* 2x/.8.2022
+I had ideas for attempting another solution which would not use NN, but instead would directly map color faces to the grayscale ones, taking into account the shape and the facial landmarks, but lately I lack time to start implementing it.
+
+* xx.8.2022
 
 * Training a DF-UD 192x192 128-48-48-16 model, Kiril to Arnold (pretrained earlier), now after 36K it. without flip dst and some changes in the dataset. I expected (hoped) the new model to train in less iterations than the previous that was DF-UDT 192x19, 128-48-32-16, because of the non-symmetric number of dimensions of the encoder and decoder, but for now it seems similar, and the dataset of the Kiril ("dst") is not exactly the same.
 
