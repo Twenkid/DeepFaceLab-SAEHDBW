@@ -1,4 +1,4 @@
-# DeepFaceLab-SAEHDBW - or **Arnoldifier, ArnoldDF**
+# DeepFaceLab-SAEHDBW - or **Arnoldifier, ArnoldDFR**
 ## New Grayscale SAEHDBW Model for higher performance, then Colorization of the result; Integration with Wav2Lip etc. and Code Review / Documentation of the source files (future work)
 
 ![image](https://user-images.githubusercontent.com/23367640/175982252-3d79a921-6261-4fc3-ad56-8737b812b955.png)
@@ -19,7 +19,7 @@ A discovery: it happened that the model trains well even with a batch size of 4 
 
 The size of the model is way below the maximum that I could fit in 750 Ti, so far: 345 MB, both 192x192 df-ud and df-udt models, so 288x288 or even 320x320? could be possible - something to try.
 
-I don't know if the batch 4 and using just 32-32 dimension will work so well on lower resolution, when the features will be smallr - that's something to try.
+I don't know if the batch 4 and using just 32-32 dimension will work so well on lower resolution, when the features will be smaller: check it out.
 
 ![0173000](https://user-images.githubusercontent.com/23367640/189473177-8600e0ca-0c4c-4bea-8e9b-67657664eec4.jpg)
 Loss: [09:01:56][#172976][0745ms][0.8431][0.6401]
