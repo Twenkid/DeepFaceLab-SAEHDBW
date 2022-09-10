@@ -17,7 +17,7 @@ Latest news:
 
 A discovery: it happened that the model trains well even with a batch size of 4 and just 32-32 dimensions. The iteration time is comparable to training the 192x192 models. Note that the dataset is not the best regarding sharpness, especially on the Kiril's side, and for now I've been training with the 192x192 faces of Kiril, many of which extracted from 640x360 videos or from 854x480, resized from 640x360, and not sharpened/super-resolution enhanced after that.
 
-The size of the model is way below the maximum that I could fit in 750 Ti, so far: 345 MB, both 192x192 df and df-udt models, so 288x288 (or even 320x320?) could be possible.
+The size of the model is way below the maximum that I could fit in 750 Ti, so far: 345 MB, both 192x192 df-ud and df-udt models, so 288x288 or even 320x320? could be possible - something to try.
 
 I don't know if the batch 4 and using just 32-32 dimension will work so well on lower resolution, when the features will be smallr - that's something to try.
 
