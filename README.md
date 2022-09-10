@@ -13,9 +13,27 @@ Some of the points are goals, TBD.
 
 Latest news:
 
+* x.9.2022 - Training DF-UD 256x256 128-32-32-16, 258 MB after 170K it.
+
+A discovery: it happened that the model trains well even with a batch size of 4 and just 32-32 dimensions. The iteration time is comparable to training the 192x192 models. Note that the dataset is not the best regarding sharpness, especially on the Kiril's side, and for now I've been training with the 192x192 faces of Kiril, some of which extracted from 640x360 videos and not sharpened/super-resolution enhanced.
+
+Note that
+
+I don't know if the batch 4 will work on lower resolution.
+
+![0173000](https://user-images.githubusercontent.com/23367640/189473177-8600e0ca-0c4c-4bea-8e9b-67657664eec4.jpg)
+Loss: [09:01:56][#172976][0745ms][0.8431][0.6401]
+
+Note 10.9: 
+
+
 * 2x/.8.2022
 
 * Training a DF-UD 192x192 128-48-48-16 model, Kiril to Arnold (pretrained earlier), now after 36K it. without flip dst and some changes in the dataset. I expected (hoped) the new model to train in less iterations than the previous that was DF-UDT 192x19, 128-48-32-16, because of the non-symmetric number of dimensions of the encoder and decoder, but for now it seems similar, and the dataset of the Kiril ("dst") is not exactly the same.
+
+Note, 10.9.2022: The expectations were correct. After just about 200K-210K iterations it looked similarly (LRD and sot-m for a few K in the end), the loss was a bit higher, a few humdredth. Visually there was a sequences which was significantly better - the one in front of the "parliament" background, which had the area covering the nose blinking, now it was stable.
+
+
 
 * 26.8.2022: I'm considering a more pronouncable or/and "unique" name/alias (names/aliases) of the project. For now:
 1. Arnold-DFL or Arnaud-DFL or
