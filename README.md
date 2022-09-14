@@ -32,66 +32,7 @@ I don't know if the batch 4 and using just 32-32-16 dimension will work so well 
 ![0173000](https://user-images.githubusercontent.com/23367640/189473177-8600e0ca-0c4c-4bea-8e9b-67657664eec4.jpg)
 Loss: [09:01:56][#172976][0745ms][0.8431][0.6401]
 
-
-======================= Model Summary ========================
-==                                                          ==
-==            Model name: df-ud-mf-256-128-32-32-16_SAEHDBW ==
-==                                                          ==
-==     Current iteration: 294421                            ==
-==                                                          ==
-==--------------------- Model Options ----------------------==
-==                                                          ==
-==            resolution: 256                               ==
-==             face_type: mf                                ==
-==     models_opt_on_gpu: True                              ==
-==                 archi: df-ud                             ==
-==               ae_dims: 128                               ==
-==                e_dims: 32                                ==
-==                d_dims: 32                                ==
-==           d_mask_dims: 16                                ==
-==       masked_training: True                              ==
-==       eyes_mouth_prio: True                              ==
-==           uniform_yaw: False                             ==
-==         blur_out_mask: True                              ==
-==             adabelief: True                              ==
-==            lr_dropout: n                                 ==
-==           random_warp: True                              ==
-==      random_hsv_power: 0.0                               ==
-==       true_face_power: 0.0                               ==
-==      face_style_power: 0.0                               ==
-==        bg_style_power: 0.0                               ==
-==               ct_mode: none                              ==
-==              clipgrad: False                             ==
-==              pretrain: False                             ==
-==       autobackup_hour: 0                                 ==
-== write_preview_history: True                              ==
-==           target_iter: 0                                 ==
-==       random_src_flip: False                             ==
-==       random_dst_flip: False                             ==
-==            batch_size: 4                                 ==
-==             gan_power: 0.0                               ==
-==        gan_patch_size: 32                                ==
-==              gan_dims: 16                                ==
-==                                                          ==
-==----------------------- Running On -----------------------==
-==                                                          ==
-==          Device index: 0                                 ==
-==                  Name: 750 Ti                            ==
-==                  VRAM: 1.45GB                            ==
-==                                                          ==
-==============================================================
-Starting. Press "Enter" to stop training and save model.
-color_transfer.use_bw_input=True91][0.7793]
-cv2ex.take_a_channel=False, user_bw_get_color_channel=2
-cv2ex.bw_input = True
-merge_bw_special_imwrite= False
-forced_gpu_id: 750 Ti
-max_gpu_memory: 1556925644
-nn.py: use_color_input_and_grayscale_model=?  False
-print_samples_info=True
-ModelBase.py.use_bw_input=True
-user_force_new_preview=True
-ModelBase.py: print_debug_generate_next_samples=True
+```
 (Big values for it. time are due to he saving etc., fast ones are about 687-690 ms,
 I don't push the CPU and GPU all the time and now (14.9) it goes around 716-723 ms)
 
@@ -121,6 +62,7 @@ I don't push the CPU and GPU all the time and now (14.9) it goes around 716-723 
 [20:48:46][#438128][1320ms][0.4766][0.5504]
 [20:58:46][#438941][0727ms][0.4736][0.5382]
 [21:08:45][#439747][0952ms][0.4713][0.5435
+```
 
 * xx.8.2022 - Colorization of Arnold with the POC method with Pix2Pix (Image to image) translation
 
