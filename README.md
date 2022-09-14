@@ -15,14 +15,112 @@ Latest news:
 
 * x.9.2022 - Training DF-UD 256x256 128-32-32-16, 258 MB after 170K it.
 
-A discovery: it happened that the model trains well even with a batch size of 4 and just 32-32 dimensions. The iteration time is comparable to training the 192x192 models. Note that the dataset is not the best regarding sharpness, especially on the Kiril's side, and for now I've been training with the 192x192 faces of Kiril, many of which extracted from 640x360 videos or from 854x480, resized from 640x360, and not sharpened/super-resolution enhanced after that.
+A discovery: it happened that the model trains well even with a batch size of 4 and just 32-32 dimensions. The iteration time is comparable to training the 192x192 models. Note that the dataset is not the best regarding sharpness, especially on the Kiril's side, and for now I've been training with the 192x192 faces of Kiril, many of which extracted from 640x360 videos or from 854x480, resized from 640x360, also blurred and not sharpened/super-resolution enhanced. A future test will use sharper dataset for finetuning.
 
 The size of the model is way below the maximum that I could fit in 750 Ti, so far: 345 MB, both 192x192 df-ud and df-udt models, so 288x288 or even 320x320? could be possible - something to try.
 
-I don't know if the batch 4 and using just 32-32 dimension will work so well on lower resolution, when the features will be smaller: check it out.
+I don't know if the batch 4 and using just 32-32-16 dimension will work so well on lower resolution, when the features will be smaller: check it out.
+
+~439K, 14.9.2022
+
+![image](https://user-images.githubusercontent.com/23367640/190230048-43bf22ca-8f6a-445f-870d-919429676b0c.png)
+
+![image](https://user-images.githubusercontent.com/23367640/190229700-60b4c4ae-5b81-4a2f-8f69-560da7dc4c41.png) ![image](https://user-images.githubusercontent.com/23367640/190229773-2241bc4f-ef92-4656-bd2c-0c793eb28207.png)
+![image](https://user-images.githubusercontent.com/23367640/190229837-5c0841ce-3779-4408-9b05-4b829218fb95.png)
+![image](https://user-images.githubusercontent.com/23367640/190229914-5fabf785-fd6f-4115-ab04-f3c9205dee97.png)
 
 ![0173000](https://user-images.githubusercontent.com/23367640/189473177-8600e0ca-0c4c-4bea-8e9b-67657664eec4.jpg)
 Loss: [09:01:56][#172976][0745ms][0.8431][0.6401]
+
+
+======================= Model Summary ========================
+==                                                          ==
+==            Model name: df-ud-mf-256-128-32-32-16_SAEHDBW ==
+==                                                          ==
+==     Current iteration: 294421                            ==
+==                                                          ==
+==--------------------- Model Options ----------------------==
+==                                                          ==
+==            resolution: 256                               ==
+==             face_type: mf                                ==
+==     models_opt_on_gpu: True                              ==
+==                 archi: df-ud                             ==
+==               ae_dims: 128                               ==
+==                e_dims: 32                                ==
+==                d_dims: 32                                ==
+==           d_mask_dims: 16                                ==
+==       masked_training: True                              ==
+==       eyes_mouth_prio: True                              ==
+==           uniform_yaw: False                             ==
+==         blur_out_mask: True                              ==
+==             adabelief: True                              ==
+==            lr_dropout: n                                 ==
+==           random_warp: True                              ==
+==      random_hsv_power: 0.0                               ==
+==       true_face_power: 0.0                               ==
+==      face_style_power: 0.0                               ==
+==        bg_style_power: 0.0                               ==
+==               ct_mode: none                              ==
+==              clipgrad: False                             ==
+==              pretrain: False                             ==
+==       autobackup_hour: 0                                 ==
+== write_preview_history: True                              ==
+==           target_iter: 0                                 ==
+==       random_src_flip: False                             ==
+==       random_dst_flip: False                             ==
+==            batch_size: 4                                 ==
+==             gan_power: 0.0                               ==
+==        gan_patch_size: 32                                ==
+==              gan_dims: 16                                ==
+==                                                          ==
+==----------------------- Running On -----------------------==
+==                                                          ==
+==          Device index: 0                                 ==
+==                  Name: 750 Ti                            ==
+==                  VRAM: 1.45GB                            ==
+==                                                          ==
+==============================================================
+Starting. Press "Enter" to stop training and save model.
+color_transfer.use_bw_input=True91][0.7793]
+cv2ex.take_a_channel=False, user_bw_get_color_channel=2
+cv2ex.bw_input = True
+merge_bw_special_imwrite= False
+forced_gpu_id: 750 Ti
+max_gpu_memory: 1556925644
+nn.py: use_color_input_and_grayscale_model=?  False
+print_samples_info=True
+ModelBase.py.use_bw_input=True
+user_force_new_preview=True
+ModelBase.py: print_debug_generate_next_samples=True
+(Big values for it. time are due to he saving etc., fast ones are about 687-690 ms,
+I don't push the CPU and GPU all the time and now (14.9) it goes around 716-723 ms)
+
+[07:55:32][#295280][0701ms][0.5368][0.5851]
+[08:05:08][#296115][0786ms][0.5318][0.5899]
+[08:15:09][#296983][1349ms][0.5333][0.5828]
+[08:25:08][#297849][0728ms][0.5277][0.5788]
+[08:35:08][#298715][0765ms][0.5308][0.5818]
+...
+[16:55:09][#341542][0814ms][0.5063][0.5739]
+[17:05:10][#342387][0830ms][0.5052][0.5729]
+[17:15:09][#343227][0835ms][0.5107][0.5675]
+[17:25:10][#344066][0825ms][0.5083][0.5663]
+...
+[21:55:10][#366704][0721ms][0.5008][0.5617]
+[22:05:10][#367539][0714ms][0.4994][0.5653]
+[22:15:10][#368374][0846ms][0.4997][0.5643]
+...
+[08:49:20][#381196][0957ms][0.4930][0.5595]
+[08:58:29][#381927][0846ms][0.4921][0.5590]
+[09:08:29][#382721][0929ms][0.4904][0.5592]
+[09:18:29][#383520][0941ms][0.4837][0.5584]
+...
+[20:19:13][#435702][0743ms][0.4756][0.5525]
+[20:28:45][#436491][0741ms][0.4776][0.5384]
+[20:38:45][#437311][1672ms][0.4767][0.5538]
+[20:48:46][#438128][1320ms][0.4766][0.5504]
+[20:58:46][#438941][0727ms][0.4736][0.5382]
+[21:08:45][#439747][0952ms][0.4713][0.5435
 
 * xx.8.2022 - Colorization of Arnold with the POC method with Pix2Pix (Image to image) translation
 
