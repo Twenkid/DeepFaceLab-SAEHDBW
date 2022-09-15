@@ -21,6 +21,10 @@ The size of the model is way below the maximum that I could fit in 750 Ti, so fa
 
 I don't know if the batch 4 and using just 32-32-16 dimension will work so well on lower resolution, when the features will be smaller: check it out.
 
+~517K, 15.9.2022
+
+![image](https://user-images.githubusercontent.com/23367640/190496593-30974d23-0381-44e7-b923-f903e92388d5.png)
+
 ~439K, 14.9.2022
 
 ![image](https://user-images.githubusercontent.com/23367640/190230048-43bf22ca-8f6a-445f-870d-919429676b0c.png)
@@ -61,7 +65,11 @@ I don't push the CPU and GPU all the time and now (14.9) it goes around 716-723 
 [20:38:45][#437311][1672ms][0.4767][0.5538]
 [20:48:46][#438128][1320ms][0.4766][0.5504]
 [20:58:46][#438941][0727ms][0.4736][0.5382]
-[21:08:45][#439747][0952ms][0.4713][0.5435
+[21:08:45][#439747][0952ms][0.4713][0.5435]
+...
+[22:32:03][#515431][1127ms][0.4553][0.5283]
+[22:41:06][#516131][0900ms][0.4537][0.5326]
+[22:51:07][#516905][1147ms][0.4543][0.5371]
 ```
 
 * xx.8.2022 - Colorization of Arnold with the POC method with Pix2Pix (Image to image) translation
