@@ -13,6 +13,12 @@ Some of the points are goals, TBD.
 
 Latest news:
 
+* 30.9.2022 - Trained LIAE-UD 192-96-32-32-16,  ...
+
+I wanted to see whether 96 dimensions of the autoencoder would be enough and it happened that they actually were. I pretrained on a modified DFL faceset to 500-some K it., then trained up to 256K Kiril-to-Arnold, uniform YAW - so far I didn't use it and that was a mistake. Now the profiles develop fine since the early stages. Due to another silly crash and lack of backup though (LOL) now I'm training again from a backup of the pretrained model from about 300K. Let's see whether the 200K-2xxK additional iterations of the pretraining contribute, that could be saved in the future.
+
+* Plans for improvements: "Profile-fixer" stage for bad borders of semi-profile and profile poses. It seems that the masks have to be convex and for profiles they are always bad and cut a big chunk in front of the forehead and the nose which results in contours attached to the face. Sometimes the recognized face/mask is smaller than the target and a "ghost" of the original nose etc. appear.
+
 * x.9.2022 - Training DF-UD 256x256 128-32-32-16, 258 MB after 170K it.
 
 A discovery: it happened that the model trains well even with a batch size of 4 and just 32-32 dimensions. The iteration time is comparable to training the 192x192 models. Note that the dataset is not the best regarding sharpness, especially on the Kiril's side, and for now I've been training with the 192x192 faces of Kiril, many of which extracted from 640x360 videos or from 854x480, resized from 640x360, also blurred and not sharpened/super-resolution enhanced. A future test will use sharper dataset for finetuning.
