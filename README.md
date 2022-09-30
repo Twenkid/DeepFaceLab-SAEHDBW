@@ -13,7 +13,7 @@ Some of the points are goals, TBD.
 
 Latest news:
 
-* 30.9.2022 - Trained LIAE-UD 192-96-32-32-16,  ...
+* 30.9.2022 - Trained LIAE-UD 192-96-32-32-16, 246 MB
 
 I wanted to see whether 96 dimensions of the autoencoder would be enough and it happened that they actually were. I pretrained on a modified DFL faceset to 500-some K it., then trained up to 256K Kiril-to-Arnold, uniform YAW - so far I didn't use it and that was a mistake. Now the profiles develop fine since the early stages. Due to another silly crash and lack of backup though (LOL) now I'm training again from a backup of the pretrained model from about 300K. Let's see whether the 200K-2xxK additional iterations of the pretraining contribute, that could be saved in the future.
 
