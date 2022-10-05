@@ -17,6 +17,77 @@ Latest news:
 
 I wanted to see whether 96 dimensions of the autoencoder would be enough and it happened that they actually were. I pretrained on a modified DFL faceset to 500-some K it., then trained up to 256K Kiril-to-Arnold, uniform YAW - so far I didn't use it and that was a mistake. Now the profiles develop fine since the early stages. Due to another silly crash and lack of backup though (LOL) now I'm training again from a backup of the pretrained model from about 300K. Let's see whether the 200K-2xxK additional iterations of the pretraining contribute, that could be saved in the future.
 
+* 4.10.2022 - Completed Kiril-to-Arnold LIAE-UD 192-96-32-32-16
+
+One new "discovery": the model was trained with "Uniform Yaw" turned on, which lead to more balance and faster convergence of the profile faces.
+The pretraining for ~300K was enough, then about 300-347K (with final tens K it. with LRD). I didn't trained CT (usually I did sot-m for some 10Ks it. with LRD).
+It is slow, on the CPU. I just merged with sot-m and it seems OK (not perfect, but that rather needs additional layer of processing which is future work). So the slow color transfer mode seems to be avoidable with acceptable quality, and note that the test dataset is diverse, it is not a single clip from an interview etc., especially Arnold's set.
+
+Interestingly, the smallest model so far, 246 MB displays higher quality and more realistic output than some 345 MB models (df-ud-t 192-128-48-32-16, maybe due to the asymmetrical encoder-decoder). I noticed a little "lighting up" of the nose etc. in one of the sequences (Parliament background), possibly the previous model (df-ud 256-128-32-32) was more stable, but I need to check it out and make a systematic comparison.
+
+**Note that the default dimensions for color DF and resolution of just 128x128 in DFL are 256-64-64-22.**
+
+Below: no additional sharpening applied
+
+![image](https://user-images.githubusercontent.com/23367640/193997352-28ee21f5-7235-422e-83d9-319afbe46dfe.png)
+
+![image](https://user-images.githubusercontent.com/23367640/193997372-c46a3d5e-0a00-4562-8334-eda14fe308d9.png)
+
+![image](https://user-images.githubusercontent.com/23367640/193997524-a3ffe6fb-5d03-496e-9f8a-7f27423ebb39.png)
+
+![image](https://user-images.githubusercontent.com/23367640/194002377-bf856a6d-a036-4a59-89ac-72841d2318ed.png)
+
+
+* Sharpening, whole image (23, IrfanView)
+
+![image](https://user-images.githubusercontent.com/23367640/193997774-df8a994f-b028-46e7-a604-ae23701d3fae.png)
+![image](https://user-images.githubusercontent.com/23367640/194002523-b1042c8d-4245-446f-bce5-23085bf951d5.png)
+![image](https://user-images.githubusercontent.com/23367640/194002553-55102d26-2e23-473f-850d-8bf7e8f7bea4.png)
+
+Good profiles, except a glitch in the masks which sometimes leaves a trailing contour, the new face doesn't cover
+the original face etc., the mask is convex and doesn't follow the shape of the face. I have ideas for correction: future work.
+
+![image](https://user-images.githubusercontent.com/23367640/194002895-49894625-25e3-440c-89ee-6b2a75169750.png)
+
+![image](https://user-images.githubusercontent.com/23367640/194003946-6c565517-2056-4c4c-bb88-f0899fb513ad.png)
+
+![image](https://user-images.githubusercontent.com/23367640/194004160-4eb359b8-444b-4c56-81f5-5f40e9be0164.png)
+
+...
+
+![image](https://user-images.githubusercontent.com/23367640/193997901-1f67c1ba-883f-484a-8c47-8b6243814ca3.png)
+![image](https://user-images.githubusercontent.com/23367640/193997960-24790f1a-5b97-41ad-a4d8-1afd3f3d6d7b.png)
+![image](https://user-images.githubusercontent.com/23367640/193998130-1638dcfb-4604-41ec-ba0d-9bc8e4668822.png)
+
+![image](https://user-images.githubusercontent.com/23367640/194003325-fd9a9960-e512-4ddc-b494-881a2756cf06.png)
+
+* Sharpening: 32, IrfanView - FullHD image. Note that the Video source has wrong focus: the background instead of the character.
+
+![image](https://user-images.githubusercontent.com/23367640/193998456-2aecb643-73d1-4f86-97f3-cf6bdbcf58f8.png)
+![image](https://user-images.githubusercontent.com/23367640/193999141-382fd774-51bb-462e-ae2e-e1aa2813fd13.png)
+
+Lena: the model is not trained on that face but it does pretty well:
+
+![image](https://user-images.githubusercontent.com/23367640/193998666-b07a2af7-ab47-4dbe-b7da-2c44b6f2ed78.png)
+![image](https://user-images.githubusercontent.com/23367640/193998792-0971d436-a0ae-4a76-ac52-6b21b376d799.png)
+
+* **Training, no sharpening**
+
+![image](https://user-images.githubusercontent.com/23367640/194004657-d18d2717-3f3b-47b0-85a7-116e4b93858a.png)
+![image](https://user-images.githubusercontent.com/23367640/194004724-7e6930fd-027e-4482-b2b8-124db9bfa7ce.png)
+![image](https://user-images.githubusercontent.com/23367640/194004749-7e0db4cb-5e61-48b5-8b39-24a1c5dd03fe.png)
+![image](https://user-images.githubusercontent.com/23367640/194004758-e005e7a5-f29d-4f6b-8394-23c9289a8936.png)
+![image](https://user-images.githubusercontent.com/23367640/194004774-a6fb8023-abb4-4fc5-a15e-0a32789f67a4.png)
+![image](https://user-images.githubusercontent.com/23367640/194004785-3ef8dc4c-93de-4fe1-a05c-6d103a88ab77.png)
+![image](https://user-images.githubusercontent.com/23367640/194004790-fbab760a-dbe9-44e5-8657-e6ecf717ef07.png)
+![image](https://user-images.githubusercontent.com/23367640/194004855-e11324fc-99bf-4306-8ba4-740bd7b9c570.png)
+
+Note the face in the top-left, LOL:
+
+![image](https://user-images.githubusercontent.com/23367640/194004887-107c5229-2346-430c-b00a-d20bef0e2016.png)
+
+
+
 * Plans for improvements: "Profile-fixer" stage for bad borders of semi-profile and profile poses. It seems that the masks have to be convex and for profiles they are always bad and cut a big chunk in front of the forehead and the nose which results in contours attached to the face. Sometimes the recognized face/mask is smaller than the target and a "ghost" of the original nose etc. appear.
 
 * x.9.2022 - Training DF-UD 256x256 128-32-32-16, 258 MB after 170K it.
