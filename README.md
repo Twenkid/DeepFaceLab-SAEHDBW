@@ -11,11 +11,15 @@ Some of the points are goals, TBD.
 
 <a href="https://github.com/Twenkid/DeepFaceLab-SAEHDBW/blob/main/Manual.md">https://github.com/Twenkid/DeepFaceLab-SAEHDBW/blob/main/Manual.md</a>
 
+<a href="https://github.com/Twenkid/DeepFaceLab-SAEHDBW/edit/main/README.md#premiere">Watch the series "Arnold Scwarzenegger: The Governor of Bulgaria"</a>
 Latest news:
 
 * 30.9.2022 - Trained LIAE-UD 192-96-32-32-16, 246 MB
 
 I wanted to see whether 96 dimensions of the autoencoder would be enough and it happened that they actually were. I pretrained on a modified DFL faceset to 500-some K it., then trained up to 256K Kiril-to-Arnold, uniform YAW - so far I didn't use it and that was a mistake. Now the profiles develop fine since the early stages. Due to another silly crash and lack of backup though (LOL) now I'm training again from a backup of the pretrained model from about 300K. Let's see whether the 200K-2xxK additional iterations of the pretraining contribute, that could be saved in the future.
+
+* Plans for improvements: "Profile-fixer" stage for bad borders of semi-profile and profile poses. It seems that the masks have to be convex and for profiles they are always bad and cut a big chunk in front of the forehead and the nose which results in contours attached to the face. Sometimes the recognized face/mask is smaller than the target and a "ghost" of the original nose etc. appear.
+
 
 * 4.10.2022 - Completed Kiril-to-Arnold LIAE-UD 192-96-32-32-16
 
@@ -73,22 +77,8 @@ Lena: the model is not trained on that face but it does pretty well:
 
 * **Training, no sharpening**
 
-![image](https://user-images.githubusercontent.com/23367640/194004657-d18d2717-3f3b-47b0-85a7-116e4b93858a.png)
-![image](https://user-images.githubusercontent.com/23367640/194004724-7e6930fd-027e-4482-b2b8-124db9bfa7ce.png)
-![image](https://user-images.githubusercontent.com/23367640/194004749-7e0db4cb-5e61-48b5-8b39-24a1c5dd03fe.png)
-![image](https://user-images.githubusercontent.com/23367640/194004758-e005e7a5-f29d-4f6b-8394-23c9289a8936.png)
-![image](https://user-images.githubusercontent.com/23367640/194004774-a6fb8023-abb4-4fc5-a15e-0a32789f67a4.png)
-![image](https://user-images.githubusercontent.com/23367640/194004785-3ef8dc4c-93de-4fe1-a05c-6d103a88ab77.png)
-![image](https://user-images.githubusercontent.com/23367640/194004790-fbab760a-dbe9-44e5-8657-e6ecf717ef07.png)
-![image](https://user-images.githubusercontent.com/23367640/194004855-e11324fc-99bf-4306-8ba4-740bd7b9c570.png)
+https://github.com/Twenkid/DeepFaceLab-SAEHDBW/blob/main/LIAE-UD-192-96-32-32-16.md
 
-Note the face in the top-left, LOL:
-
-![image](https://user-images.githubusercontent.com/23367640/194004887-107c5229-2346-430c-b00a-d20bef0e2016.png)
-
-
-
-* Plans for improvements: "Profile-fixer" stage for bad borders of semi-profile and profile poses. It seems that the masks have to be convex and for profiles they are always bad and cut a big chunk in front of the forehead and the nose which results in contours attached to the face. Sometimes the recognized face/mask is smaller than the target and a "ghost" of the original nose etc. appear.
 
 * x.9.2022 - Training DF-UD 256x256 128-32-32-16, 258 MB after 170K it.
 
@@ -196,7 +186,8 @@ More info, results and code - later.
 
 * Future work: Possibly integration with RealTimeVoiceCloning? etc./other TTS engines etc.
 
-
+<a name="#premiere">
+ 
 22.6.2022
 
 **Premiere!  Part I**
