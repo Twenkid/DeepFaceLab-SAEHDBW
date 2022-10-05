@@ -11,7 +11,29 @@ Some of the points are goals, TBD.
 
 <a href="https://github.com/Twenkid/DeepFaceLab-SAEHDBW/blob/main/Manual.md">https://github.com/Twenkid/DeepFaceLab-SAEHDBW/blob/main/Manual.md</a>
 
-<a href="https://github.com/Twenkid/DeepFaceLab-SAEHDBW/README.md#premiere">Watch the series "Arnold Scwarzenegger: The Governor of Bulgaria"</a>
+Watch the series: "Arnold Scwarzenegger: The Governor of Bulgaria"</a>
+
+**Premiere!  Part I**
+
+![image](https://user-images.githubusercontent.com/23367640/175982252-3d79a921-6261-4fc3-ad56-8737b812b955.png)
+
+https://artificial-mind.blogspot.com/2022/06/arnold-schwarzenegger-governor-of.html
+
+https://www.youtube.com/watch?v=n2JMGqxOYfA&feature=youtu.be
+
+* **Part II**: **"Arnold meets his illegal daughter Lena Borislavova Scwarzenegger"** https://youtu.be/k1MZ8eIUjXE
+
+![image](https://user-images.githubusercontent.com/23367640/178838680-44e7398c-a0b4-4548-9c82-9a2d3430886c.png)
+
+
+* **Part III**: Combined with Wav2Lip - the mouth is synchronized; no finetuning; another pass of DFL to repair the artifacts (however there is some loss of contrast and sharpness)  https://youtu.be/4F7PB7wBEXk
+
+![image](https://user-images.githubusercontent.com/23367640/179422086-2af2a887-4681-4f58-a68f-d16f4f6a04df.png)
+
+
+
+* **Part IV**: Lip-syncing with finetuning repair and synthesized cloned voices (RealTimeVoiceCloning) over original script ("full directing") with Arnold, Lena Schwarzenegger and Stoltenberg    https://youtu.be/X56QkNzkkVM
+* 
 Latest news:
 
 * 30.9.2022 - Trained LIAE-UD 192-96-32-32-16, 246 MB
@@ -70,7 +92,7 @@ the original face etc., the mask is convex and doesn't follow the shape of the f
 ![image](https://user-images.githubusercontent.com/23367640/193998456-2aecb643-73d1-4f86-97f3-cf6bdbcf58f8.png)
 ![image](https://user-images.githubusercontent.com/23367640/193999141-382fd774-51bb-462e-ae2e-e1aa2813fd13.png)
 
-Lena: the model is not trained on that face but it does pretty well:
+Lena: the model is not trained or finetuned on that face:
 
 ![image](https://user-images.githubusercontent.com/23367640/193998666-b07a2af7-ab47-4dbe-b7da-2c44b6f2ed78.png)
 ![image](https://user-images.githubusercontent.com/23367640/193998792-0971d436-a0ae-4a76-ac52-6b21b376d799.png)
