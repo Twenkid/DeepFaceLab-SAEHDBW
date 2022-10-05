@@ -11,7 +11,7 @@ Some of the points are goals, TBD.
 
 <a href="https://github.com/Twenkid/DeepFaceLab-SAEHDBW/blob/main/Manual.md">https://github.com/Twenkid/DeepFaceLab-SAEHDBW/blob/main/Manual.md</a>
 
-<a href="https://github.com/Twenkid/DeepFaceLab-SAEHDBW/edit/main/README.md#premiere">Watch the series "Arnold Scwarzenegger: The Governor of Bulgaria"</a>
+<a href="https://github.com/Twenkid/DeepFaceLab-SAEHDBW/README.md#premiere">Watch the series "Arnold Scwarzenegger: The Governor of Bulgaria"</a>
 Latest news:
 
 * 30.9.2022 - Trained LIAE-UD 192-96-32-32-16, 246 MB
