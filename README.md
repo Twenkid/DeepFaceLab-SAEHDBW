@@ -33,6 +33,9 @@ https://www.youtube.com/watch?v=n2JMGqxOYfA&feature=youtu.be
 
 
 * **Part IV**: Lip-syncing with finetuning repair and synthesized cloned voices (RealTimeVoiceCloning) over original script ("full directing") with Arnold, Lena Schwarzenegger and Stoltenberg    https://youtu.be/X56QkNzkkVM
+
+![image](https://user-images.githubusercontent.com/23367640/196010523-9bf7514c-a206-4ee7-8cfd-4aa20cc2a4cc.png)
+
 * 
 Latest news:
 
