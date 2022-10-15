@@ -1,4 +1,4 @@
-# DeepFaceLab-SAEHDBW - or **Arnoldifier, ArnoldDFR**
+# DeepFaceLab-SAEHDBW or **Arnoldifier, ArnoldDFR**
 ## New Grayscale SAEHDBW Model for higher performance, then Colorization of the result; Integration with Wav2Lip etc. and Code Review / Documentation of the source files (future work)
 
 ![image](https://user-images.githubusercontent.com/23367640/175982252-3d79a921-6261-4fc3-ad56-8737b812b955.png)
