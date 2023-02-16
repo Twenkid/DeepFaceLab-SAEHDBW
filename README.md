@@ -36,7 +36,18 @@ https://www.youtube.com/watch?v=n2JMGqxOYfA&feature=youtu.be
 
 ![image](https://user-images.githubusercontent.com/23367640/196010523-9bf7514c-a206-4ee7-8cfd-4aa20cc2a4cc.png)
 
-* 
+ 
+* **Part V**: 
+Arnold's superfood and discussing Bulk & Cut and being shredded all the time: https://youtu.be/40VvW07aqdM
+
+![image](https://user-images.githubusercontent.com/23367640/219415026-d370765c-a44a-4388-a603-862b6ff1fef5.png)
+
+Суперхраната на Арнолд Шварценегер: Губернаторът на България - Част 5
+
+"Produced with Arnoldifier, a modified  Deepfacelab which I made to train grayscale models with 3x higher performance/quality. This is trained on a GF 750 Ti 2 GB."
+#deepfake #arnold #twenkid #fitness #фитнес #културизъм #bodybuilding #Arnoldifier #deepfacelab
+
+
 Latest news:
 
 * 30.9.2022 - Trained LIAE-UD 192-96-32-32-16, 246 MB
