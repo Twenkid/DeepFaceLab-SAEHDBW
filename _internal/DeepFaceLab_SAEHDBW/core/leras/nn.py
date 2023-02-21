@@ -108,22 +108,30 @@ class nn():
             import core.leras.archis
             
             print("core.leras.init ALL")
+            print(f"nn.initialize: device_config.devices = {str(device_config.devices)}")
+            print(f"nn.initialize: device_config.devices = {str(device_config.devices)} len={len(device_config.devices)}, {device_config.devices[0]}")
+            
             
             # Configure tensorflow session-config
             if len(device_config.devices) == 0:
                 config = tf.ConfigProto(device_count={'GPU': 0})
-                nn.tf_default_device_name = '/CPU:0'
+                nn.tf_default_device_name = '/CPU:0'                
             else:
-                nn.tf_default_device_name = f'/{device_config.devices[0].tf_dev_type}:0'
-                
+                nn.tf_default_device_name = f'/{device_config.devices[0].tf_dev_type}:0'                              
                 config = tf.ConfigProto()
                 config.gpu_options.visible_device_list = ','.join([str(device.index) for device in device_config.devices])
-                
+            
+            print("nn.tf_default_device_name = ""nn.tf_default_device_name={nn.tf_default_device_name}")            
             config.gpu_options.force_gpu_compatible = True
-            config.gpu_options.allow_growth = True
+            print("Before config.gpu_options.allow_growth")
+            #config.gpu_options.allow_growth = True
+            config.gpu_options.allow_growth = False #True #False - #13-2-2023
             nn.tf_sess_config = config
+            print(f"After nn.tf_sess_config = config, {config}")
+            #print("config=", config)
             
         if nn.tf_sess is None:
+            print("if nn.tf_sess is None:") #ERROR HERE? HANGS? #13-2-2023, WHY?
             nn.tf_sess = tf.Session(config=nn.tf_sess_config)
 
         if floatx == "float32":

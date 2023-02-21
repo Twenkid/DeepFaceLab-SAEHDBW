@@ -7,14 +7,11 @@ import time
 from pathlib import Path
 from core.interact import interact as io
 
-skip_physical_devices = False # True #10-5-2022 - fix CUDA tf issue - for the CUDA build
+skip_physical_devices = False # True #10-5-2022 - fix CUDA tf issue
 
 force_gpu_data = "force_gpu_data" in os.environ #16-5-2022
 max_gpu_memory = 1556925644
 forced_gpu_id = "Unknown CUDA GPU"
-print(f"core\leras\device.py: force_gpu_data={force_gpu_data}") #3-8-2022
-# fixed a missed assignment: physical_devices = device_lib.list_local_devices()
-# in if not skip_physical_devices: ...
 
 if force_gpu_data:
     skip_physical_devices = True
@@ -25,7 +22,7 @@ if force_gpu_data:
     if "forced_gpu_id" in os.environ:
       forced_gpu_id = os.environ["forced_gpu_id"]
     print(f"forced_gpu_id: {forced_gpu_id}\nmax_gpu_memory: {max_gpu_memory}")
-
+                          
 class Device(object):
     def __init__(self, index, tf_dev_type, name, total_mem, free_mem):
         self.index = index
@@ -111,7 +108,6 @@ class Devices(object):
     def _get_tf_devices_proc(q : multiprocessing.Queue):
         print("_get_tf_devices_proc")
         print(sys.platform[0:3])
-        #SET to the proper part -- check is it working without that? It should be defined in the env.variable?
         os.environ['CUDA_PATH'] = r"C:\DFL\DeepFaceLab_NVIDIA_up_to_RTX2080Ti\_internal\CUDA"
         s = os.environ['CUDA_PATH']
         print(f"os.environ['CUDA_PATH']={s}")
@@ -153,7 +149,6 @@ class Devices(object):
         #physical_devices = device_lib.list_local_devices()
         physical_devices_f = {}
         if not skip_physical_devices:
-          physical_devices = device_lib.list_local_devices() #I've forgotten to add this for the DX12 version! #3-8-2022
           print(f"list_local_devices()={device_lib.list_local_devices()}")
         else:        
             #2147483648
@@ -162,6 +157,7 @@ class Devices(object):
             print("skip_physical_devices and force values")
             physical_devices_f = {}
             #physical_devices_f[0] = ('GPU', '750 Ti', max_memory) #1556925644) #1000000000)
+            #physical_devices_f[0] = ('CPU', 'CPU', max_gpu_memory) # Added (insted of only [0] for GPU - #21-2-2023 no it's added already
             physical_devices_f[0] = ('GPU', forced_gpu_id, max_gpu_memory) #1556925644) #1000000000)
             print(physical_devices_f)
             q.put(physical_devices_f)
