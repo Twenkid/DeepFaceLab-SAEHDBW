@@ -6,9 +6,15 @@
 ## Notes, experience, tools, deepfakes
 
 Some of the points are goals, TBD.
+
 **News**
-23.3.2023: One of the scripts for colorization is added. https://github.com/Twenkid/DeepFaceLab-SAEHDBW/tree/main/DeepFaceLab_DirectX12/_internal/DeepFaceLab/colorize
-The other pieces and an example to be added later. See the colorized example belowe.
+
+23.3.2023: One of the scripts for colorization is added: the one that trains a pix2pix model: grayscale to color faces.
+I didn't upload it when I made it, because the workflow was a bit laborious, but I didn't have energy to make it easier for users back then.
+
+https://github.com/Twenkid/DeepFaceLab-SAEHDBW/tree/main/DeepFaceLab_DirectX12/_internal/DeepFaceLab/colorize
+
+The other pieces and an example to be added later. See the colorized example below.
 
 21.2.2023: Recently I trained a new model to Arnold (retrained the Kiril model), an old idea to "puppet" the face myself, although the source wasn't specially "Arnold-related". It achieved very low error. There was an unknown hanging of the CUDA build during the initialization phase (I have fixed one bug of that kind in May last year), which I skipped fixing and used the DirectX version instead, up to today - after a bit of LRD training for two hours or so and managed to fix it - updating a few files. (I don't know whether that error is present in any other setups though, I haven't tested ArnoldDFR on other machines and nobody has reported, although there are 10 stars and 3 forks so far).
 DeepFaceLab_SAEHDBW_22_5_2022\core\leras\nn.py
