@@ -21,6 +21,7 @@ DeepFaceLab_SAEHDBW_22_5_2022\core\leras\nn.py
 DeepFaceLab_SAEHDBW_22_5_2022\core\leras\device.py
 Sample training file:
 
+An issue in DeepfaceLab repo about this project (2 July 2022): https://github.com/iperov/DeepFaceLab/issues/5535
 
 ### Manual
 
