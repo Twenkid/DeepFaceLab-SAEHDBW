@@ -9,6 +9,9 @@ Some of the points are goals, TBD.
 
 **News**
 
+2.4.2023: Episode 0: The Pilot experimental version of Episode 1 with an earlier version of the model and the workflow, completed in May 2022, but not released up to now: https://youtu.be/2CMmd494Dqw
+![image](https://user-images.githubusercontent.com/23367640/229377472-916232a7-c271-4af5-9873-a6bd4eb5734f.png)
+
 23.3.2023: One of the scripts for colorization is added: the one that trains a pix2pix model: grayscale to color faces.
 I didn't upload it when I made it, because the workflow was a bit laborious, but I didn't have energy to make it easier for users back then.
 
