@@ -9,6 +9,10 @@ Some of the points are goals, TBD.
 
 **News**
 
+3.4.2023: A script for creating the dataset needed for training a colorizing model for the grayscale faces.
+https://github.com/Twenkid/DeepFaceLab-SAEHDBW/blob/main/DeepFaceLab_DirectX12/_internal/DeepFaceLab/colorize/pix2pix_dataset.py
+A few other modified files have to be added for the two-pass merging process (first - grayscale faces generation and storing them to disk, second: a new pass without face generation, reading the stored faces, colorizing them with the other pix2pix model and merging with the color frames).
+
 2.4.2023: Episode 0: The Pilot experimental version of Episode 1 with an earlier version of the model and the workflow, completed in May 2022, but not released up to now: https://youtu.be/2CMmd494Dqw
 ![image](https://user-images.githubusercontent.com/23367640/229377472-916232a7-c271-4af5-9873-a6bd4eb5734f.png)
 
