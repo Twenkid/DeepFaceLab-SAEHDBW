@@ -22,6 +22,7 @@ from .MergerScreen import Screen, ScreenManager
 # See also _internal\DeepFaceLab\merger\MergeMasked.py
 # See also instructions of the required bat for the colorizing workflow and training the colorizing model
 # See also pix2pix ... 
+# Version: 10.8.2022
 
 # Todor/Twenkid, 19-4-2022
 merge_file_extension = ".jpg" #default was .png hardcoded - but like that there is no
