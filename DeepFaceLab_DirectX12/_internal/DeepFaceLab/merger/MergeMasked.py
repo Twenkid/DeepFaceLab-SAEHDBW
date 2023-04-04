@@ -22,6 +22,8 @@ See also:
 
 See also: ~ C:\DFL\DeepFaceLab_DirectX12\_internal\DeepFaceLab\merger\InteractiveMergerSubprocessor.py
 
+Version: 8.2022
+
 """
 #from colorize import pix_128 #10-8-2022 --> call as a script
 
