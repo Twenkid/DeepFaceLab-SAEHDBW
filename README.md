@@ -13,8 +13,7 @@ Some of the points are goals, TBD.
 https://github.com/Twenkid/DeepFaceLab-SAEHDBW/blob/main/DeepFaceLab_DirectX12/_internal/DeepFaceLab/colorize/pix2pix_dataset.py
 A few other modified files have to be added for the two-pass merging process (first - grayscale faces generation and storing them to disk, second: a new pass without face generation, reading the stored faces, colorizing them with the other pix2pix model and merging with the color frames).
 
-2.4.2023: Episode 0: The Pilot experimental version of Episode 1 with an earlier version of the model and the workflow, completed in May 2022, but not released up to now: https://youtu.be/2CMmd494Dqw
-![image](https://user-images.githubusercontent.com/23367640/229377472-916232a7-c271-4af5-9873-a6bd4eb5734f.png)
+2.4.2023: Episode 0: The Pilot experimental version of Episode 1 with an earlier version of the model and the workflow, completed in May 2022, but not released up to now: Please scroll below the episodes published earlier:
 
 23.3.2023: One of the scripts for colorization is added: the one that trains a pix2pix model: grayscale to color faces.
 I didn't upload it when I made it, because the workflow was a bit laborious, but I didn't have energy to make it easier for users back then.
@@ -66,6 +65,11 @@ Arnold's superfood and discussing Bulk & Cut and being shredded all the time: ht
 ![image](https://user-images.githubusercontent.com/23367640/219415026-d370765c-a44a-4388-a603-862b6ff1fef5.png)
 
 Суперхраната на Арнолд Шварценегер: Губернаторът на България - Част 5
+
+* **Episode 0**: The Pilot experimental version of Episode 1 with an earlier version of the model and the workflow, completed in May 2022, but not released up to now: Please scroll below the episodes published earlier:
+https://youtu.be/2CMmd494Dqw
+![image](https://user-images.githubusercontent.com/23367640/229377472-916232a7-c271-4af5-9873-a6bd4eb5734f.png)
+
 
 "Produced with Arnoldifier, a modified  Deepfacelab which I made to train grayscale models with 3x higher performance/quality. This is trained on a GF 750 Ti 2 GB."
 #deepfake #arnold #twenkid #fitness #фитнес #културизъм #bodybuilding #Arnoldifier #deepfacelab
