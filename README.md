@@ -54,7 +54,7 @@ https://www.youtube.com/watch?v=n2JMGqxOYfA&feature=youtu.be
 
 
 
-* **Part IV**: Lip-syncing with finetuning repair and synthesized cloned voices (RealTimeVoiceCloning) over original script ("full directing") with Arnold, Lena Schwarzenegger and Stoltenberg    https://youtu.be/X56QkNzkkVM
+* **Part IV**: Lip-syncing with finetuning repair and synthesized cloned voices (RealTimeVoiceCloning) over original script ("full directing") with Arnold, Lena Schwarzenegger and Stoltenberg  https://youtu.be/X56QkNzkkVM
 
 ![image](https://user-images.githubusercontent.com/23367640/196010523-9bf7514c-a206-4ee7-8cfd-4aa20cc2a4cc.png)
 
@@ -248,6 +248,8 @@ More info, results and code - later.
 * Future work: Integration with Wav2Lip and Wav2Lip-HQ for automated lip-sync and repair of the output from the lip-sync libraries. 
 
 * Future work: Possibly integration with RealTimeVoiceCloning? etc./other TTS engines etc.
+[Note, 25.5.2023: I used RealTimeVoiceCloning as a Desktop program, I found a Colab notebook now: [RealTimeVoiceCloning ](https://colab.research.google.com/github/tugstugi/dl-colab-notebooks/blob/master/notebooks/RealTimeVoiceCloning.ipynb#scrollTo=WZjKkvGF1Y-i)
+However this is probably outdated already. Find better systems.]
 
 <a name="#premiere">
  
