@@ -39,6 +39,8 @@ Watch the series: "Arnold Scwarzenegger: The Governor of Bulgaria"</a>
 
 ![image](https://user-images.githubusercontent.com/23367640/175982252-3d79a921-6261-4fc3-ad56-8737b812b955.png)
 
+Български: *Арнолд Шварценегер: Губернаторът на България*
+
 https://artificial-mind.blogspot.com/2022/06/arnold-schwarzenegger-governor-of.html
 
 https://www.youtube.com/watch?v=n2JMGqxOYfA&feature=youtu.be
