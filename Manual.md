@@ -8,7 +8,7 @@ Contact, support, collaboration:
 
 https://artificial-mind.blogspot.com
 
-http://twenkid.com
+http://research.twenkid.com  | http://twenkid.com
 
 Notes version: 1.7.2022
 
@@ -149,6 +149,13 @@ WARNING: The interactive mode for merging is not adapted for grayscale yet! For 
 ## RESIZING
 
 For higher performance, the color extracted input can be resized to grayscale with a script with proper env.vars - see the examples.
+
+## USEFUL LINKS 
+[26.12.2023]
+Wav2Lip, Wav2LipHD ...
+For lipsyncing, works in Colab as well:
+https://github.com/saifhassan/Wav2Lip-HD
+(I needed to do some directory/path editing in the code in order to complete the run though).
 
 ## CUDA ISSUE WORK AROUND
 
