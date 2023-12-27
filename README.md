@@ -9,6 +9,14 @@ Some of the points are goals, TBD.
 
 **News**
 
+27.12.2023: New episode:
+
+**New Year Address of the Prime Minister of the Change Kiril Petkov** (Political Parody, Satire; Wav2LipHD Super, DALL-E 3, reedit of fragments of the previous episodes etc.... )
+
+![Untitled2 mp4_snapshot_00 05 001](https://github.com/Twenkid/DeepFaceLab-SAEHDBW/assets/23367640/d3176df4-6ede-46df-86cc-bae26dc33357)
+
+https://www.youtube.com/watch?v=AojlaVnjOJY
+
 3.4.2023: A script for creating the dataset needed for training a colorizing model for the grayscale faces.
 https://github.com/Twenkid/DeepFaceLab-SAEHDBW/blob/main/DeepFaceLab_DirectX12/_internal/DeepFaceLab/colorize/pix2pix_dataset.py
 A few other modified files have to be added for the two-pass merging process (first - grayscale faces generation and storing them to disk, second: a new pass without face generation, reading the stored faces, colorizing them with the other pix2pix model and merging with the color frames).
