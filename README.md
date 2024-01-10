@@ -9,7 +9,15 @@ Some of the points are goals, TBD.
 
 ## News
 
-### 11.1.2024: Playing with DFL again, I recalled one TF bug and its solution when running with CUDA on my still rolling 750 Ti. 
+### 11.1.2024: Playing with DFL again
+
+1. Pseudo hanging
+2. "Emergent behaviior" 
+
+**1. Pseudo hanging (delay) of nn.tf_sess_config**
+
+I recalled one TF bug and its solution when running with CUDA on my still rolling 750 Ti.
+
 ```python
        if nn.tf_sess is None:
             print("if nn.tf_sess is None:") #ERROR HERE? HANGS? #13-2-2023, WHY?
@@ -30,6 +38,12 @@ https://www.google.com/search?client=opera&q=tf.Session+hanging&sourceid=opera&i
 https://stackoverflow.com/questions/52680435/tensorflow-1-11-hangs-on-sess-tf-session
 
 https://github.com/tensorflow/tensorflow/issues/18652
+
+**2. "Emergent behavior"**
+
+ I haven't trained for a long time and when I saw the black screens in the beginning I thought that there was some bug that has slipped in the display part of training process, but I let it run because the loss graph seemed to slightly go down. Then the faces appeared and the loss function jumped to a reasonable value. It was training of specific faces from a pretrained model on many faces - then I recalled that it's probably normal, there are initial "waves" of reshaping, it just was slower than I expected. I may check it out with other faces, the sharpenss of the decrease of the loss function is strange, like the "emergent phenomena" in the LLMs.
+
+![image](https://github.com/Twenkid/DeepFaceLab-SAEHDBW/assets/23367640/1784c300-779b-492c-a1c9-8abfd98c9ce2)
 
 ### 27.12.2023: New episode with Wav2LipHD:
 
