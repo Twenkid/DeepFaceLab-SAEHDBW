@@ -7,9 +7,31 @@
 
 Some of the points are goals, TBD.
 
-**News**
+## News
 
-27.12.2023: New episode:
+### 11.1.2024: Playing with DFL again, I recalled one TF bug and its solution when running with CUDA on my still rolling 750 Ti. 
+```python
+       if nn.tf_sess is None:
+            print("if nn.tf_sess is None:") #ERROR HERE? HANGS? #13-2-2023, WHY?
+            nn.tf_sess = tf.Session(config=nn.tf_sess_config)
+```
+It doesn't happen with the DX12 version, and it actually didn't really hang, but it needs a minute and something before starting (it needed so) for the first run after something, then it starts immediately. (Some caches or so). So just wait a bit. 
+Another bug though is that sometimes the CUDA version runs slower than it's supposed to run, now it started with ~560-570-530 ms per iteration, but then slowed down below the DX12 version (>800-1000ms) or starts like that. After several restarts (at the end I "Entered" the wait period to change the parameters, but didn't change anything, just went through) and it got fast again.
+
+```
+Starting. Press "Enter" to stop training and save model.
+[00:09:45][#007322][0531ms][0.8211][0.7711]
+```
+
+Re the tf.Session bug:
+
+https://www.google.com/search?client=opera&q=tf.Session+hanging&sourceid=opera&ie=UTF-8&oe=UTF-8
+
+https://stackoverflow.com/questions/52680435/tensorflow-1-11-hangs-on-sess-tf-session
+
+https://github.com/tensorflow/tensorflow/issues/18652
+
+### 27.12.2023: New episode with Wav2LipHD:
 
 **New Year Address of the Prime Minister of the Change Kiril Petkov** (Political Parody, Satire; Wav2LipHD Super, DALL-E 3, reedit of fragments of the previous episodes etc.... )
 
