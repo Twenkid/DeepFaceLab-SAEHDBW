@@ -26,6 +26,8 @@ I recalled one TF bug and its solution when running with CUDA on my still rollin
 It doesn't happen with the DX12 version, and it actually didn't really hang, but it needs a minute and something before starting (it needed so) for the first run after something, then it starts immediately. (Some caches or so). So just wait a bit. 
 Another bug though is that sometimes the CUDA version runs slower than it's supposed to run, now it started with ~560-570-530 ms per iteration, but then slowed down below the DX12 version (>800-1000ms) or starts like that. After several restarts (at the end I "Entered" the wait period to change the parameters, but didn't change anything, just went through) and it got fast again.
 
+A few hours later: I had a theory - possibly part of the model is moved to RAM and some kind of swapping begins, as it's barely fitting in GPU RAM and once I dare to open more stuff in a browser etc. the iterations slow down. Unless it's something about specific optimization hurdles.
+
 ```
 Starting. Press "Enter" to stop training and save model.
 [00:09:45][#007322][0531ms][0.8211][0.7711]
