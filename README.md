@@ -9,6 +9,27 @@ Some of the points are goals, TBD.
 
 ## News
 
+### 30.1.2024: New film produced with Arnoldifier: featuring 8 face models
+
+![image](https://github.com/Twenkid/DeepFaceLab-SAEHDBW/assets/23367640/08172d10-a4da-403e-aa1d-a997f0bd2e33)
+
+https://youtu.be/VPj9L61R_Ak
+
+It is 3-minute long and has an intro and outro part which features sequences from my animated fantasy experiment "Star Symphony in Chepelare", 2018 which was created with my own video editor Twenkid FX with specially developed computer vision and image processing extension functions to generate the starfields and the meteors over a live action video and to convert it to look like drawn and painted. Note the little blobs which float in the reflections in the "Lord of the Rings" sequence, they blended with the rotating starfield.
+
+The movie applies 8 models at 192x192, LIAE-UD-192-96-32-32-16-PRE-20-9-2022_SAEHDBW (the pretrained general face model was from 9-2022).
+Minor updates in code, paramters for default blur of the face mask etc., I thought of a few more major functions: 
+1) Selective sharpening and noise generation during the merging itself for a more natural blending;
+2) Temporal smoothing of the masks for healing some of the shaky or wrong landmarks detections (sometimes manual extractions reduce it, but not enough);
+3) recognition and correction of the masks that go out of the borders of the face of the replaced character;
+4)  selective painting, blending to the target using actual data from the dataset, not just the generated model (an old idea); ... (some of the image enhancements may be possible with the built-in enhancer function/super resolution, but I don't use it in Arnoldifier, I think it had to be converted to work with grayscale or to add a conversion of the grayscale image to color before enhancement and then feedback converted back to grayscale - but I need to delve into that part of the code and see how it works);
+5) Utils for working with multiple facial models, batch training with less human-intervention in the middle and editing of the final movie, which faces to draw with which masks when many in one frame etc.
+6) Simple utils for merging with start/end frames (not all in the folder - this is the easiest from these, one simple solution: start/end frame from a list to trigger/stop, a lit of skipped frames).
+7) Automatic or semi-automatic/assisted download and creation of datasets, search of relevant video sources, download and extraction etc. 9) Continuation of the colorization mode and doing without pix2pix model, by smart painting 10) Integration of a Wav2Lip workflow ...
+8) Etc.
+
+More info on the workflow and the training process- maybe later, stay tuned...
+
 ### 11.1.2024: Playing with DFL again
 
 1. Pseudo hanging
