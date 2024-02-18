@@ -11,6 +11,8 @@ Some of the points are goals, TBD.
 
 ### 30.1.2024: New film produced with Arnoldifier: featuring 8 face models
 
+![image](https://github.com/Twenkid/DeepFaceLab-SAEHDBW/assets/23367640/b1c97d3c-a8d0-4327-90ff-9b67ff7090ab)
+
 ![image](https://github.com/Twenkid/DeepFaceLab-SAEHDBW/assets/23367640/08172d10-a4da-403e-aa1d-a997f0bd2e33)
 
 https://youtu.be/VPj9L61R_Ak
