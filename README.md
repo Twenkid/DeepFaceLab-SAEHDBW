@@ -9,6 +9,13 @@ Some of the points are goals, TBD.
 
 ## News
 
+
+## Ambulgul II
+
+![image](https://github.com/Twenkid/DeepFaceLab-SAEHDBW/assets/23367640/b4259d7b-a02a-45d7-a0e1-b6bd88e5f815)
+
+The new film is mostly produced, finalizing/deciding for some parts and the voice acting is to be recorded. The movie is another political satire, a follow-up, now with complete voice acting/dubbing for the entire action (no lip syncing) and way more dramatic. For now there are two 3 characters, two of them with changed faces.
+
 ### 30.1.2024: New film produced with Arnoldifier: featuring 8 face models
 
 ![image](https://github.com/Twenkid/DeepFaceLab-SAEHDBW/assets/23367640/b1c97d3c-a8d0-4327-90ff-9b67ff7090ab)
