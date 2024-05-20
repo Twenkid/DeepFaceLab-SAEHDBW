@@ -12,6 +12,15 @@ Some of the points are goals, TBD.
 
 ## Ambulgul II
 
+ 19.5.2024: Трейлър на сатиричния дийпфейк филм "България влиза в Еврозоната". С двама дийпфейк озвучени герои. Пълният филм има действие 4:хх мин (кадри от Властелинът..).
+https://youtu.be/xmsVBVaQPX0?si=zWlmMFwCWVzakfJG
+
+![image](https://github.com/Twenkid/DeepFaceLab-SAEHDBW/assets/23367640/b7e69584-f472-4c73-94d4-b76a46b5314a)
+![image](https://github.com/Twenkid/DeepFaceLab-SAEHDBW/assets/23367640/d62a1ab8-bb91-4ef5-b309-4d38de9a8c26)
+![image](https://github.com/Twenkid/DeepFaceLab-SAEHDBW/assets/23367640/36d722cc-aede-4921-8e86-e7ec973eaea2)
+
+
+
 ![image](https://github.com/Twenkid/DeepFaceLab-SAEHDBW/assets/23367640/b4259d7b-a02a-45d7-a0e1-b6bd88e5f815)
 
 The new film is mostly produced, finalizing/deciding for some parts and the voice acting is to be recorded. The movie is another political satire, a follow-up, now with complete voice acting/dubbing for the entire action (no lip syncing) and way more dramatic. For now there are two 3 characters, two of them with changed faces.
